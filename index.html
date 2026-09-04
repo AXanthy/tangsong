@@ -1,0 +1,126 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>唐诗宋词-首页</title>
+    <link rel="stylesheet" type="text/css" href="mycss.css" />
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #homeView {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        #contentFrame {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            background: #fff;
+        }
+        #musicBtn {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            z-index: 9999;
+            width: 46px;
+            height: 46px;
+            border: 0;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.55);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #musicBtn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>>
+    <audio id="music" src="images/music.mp3" loop preload="auto"></audio>
+    <button id="musicBtn" type="button" title="播放/暂停背景音乐">♪</button>
+
+    <div id="homeView">
+        <div align="center">
+            <h1 align="center"><a href="tangshi/tangshi.html">唐诗</a> | <a href="songci/songci.html">宋词</a></h1>
+            <hr size="1" width="80%">
+            <p align="center"><img src="images/sy.jpg" width="400"></p>
+            <hr size="1" width="80%">
+            <p align="center"><small>&copy;2026年终末列车组 <a href="mailto:564997486@qq.com">联系我们</a></p>
+        </div>
+    </div>
+
+    <iframe id="contentFrame" name="contentFrame"></iframe>
+
+    <script>
+        var music = document.getElementById("music");
+        var btn = document.getElementById("musicBtn");
+        var homeView = document.getElementById("homeView");
+        var contentFrame = document.getElementById("contentFrame");
+
+        function refreshBtn() {
+            if (music.paused) {
+                btn.textContent = "♪";
+                btn.title = "播放背景音乐";
+            } else {
+                btn.textContent = "♫";
+                btn.title = "暂停背景音乐";
+            }
+        }
+
+        function tryPlay() {
+            var p = music.play();
+            if (p) {
+                p.then(refreshBtn).catch(function () {});
+            }
+        }
+
+        btn.onclick = function () {
+            if (music.paused) {
+                tryPlay();
+            } else {
+                music.pause();
+                refreshBtn();
+            }
+        };
+
+        // 若浏览器自动播放被限制，用户第一次点击页面任意处即可开始播放
+        document.addEventListener("click", tryPlay, { once: true });
+        tryPlay();
+
+        // 首页点击“唐诗/宋词/诗词问答”时，在框架中打开子页面，页面不刷新，音乐不中断
+        var subLinks = document.querySelectorAll(
+            '#homeView a[href$="tangshi/tangshi.html"], #homeView a[href$="songci/songci.html"], #homeView a[href$="Q%26A.html"]'
+        );
+        for (var i = 0; i < subLinks.length; i++) {
+            subLinks[i].addEventListener("click", function (e) {
+                e.preventDefault();
+                contentFrame.src = this.getAttribute("href");
+                homeView.style.display = "none";
+                contentFrame.style.display = "block";
+            });
+        }
+
+        // 子页面内点击“首页”时，通过 postMessage 通知外层返回首页内容
+        window.addEventListener("message", function (e) {
+            if (e.data === "tangsong-go-home") {
+                contentFrame.style.display = "none";
+                contentFrame.src = "about:blank";
+                homeView.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

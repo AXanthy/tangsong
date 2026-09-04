@@ -1,0 +1,18 @@
+body{ 
+  background:url(images/back3.jpg );  
+  margin:50 auto;                         
+  width:60%;                            
+  font-family:楷体
+}                                           
+h2{                                      
+  border-bottom:1px black solid; 
+}
+h1{font:36px/2em  黑体;} 
+p{
+    font-size: 20px;
+}
+a{text-decoration:none;
+  color: #000;}  
+a:hover{   
+text-decoration:underline; 
+color:rgb(194, 192, 82);}
