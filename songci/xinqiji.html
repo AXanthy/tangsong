@@ -5,7 +5,7 @@
 <body>
     <h1 align="center">辛弃疾</h1>
     <p align="center"><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></p>
-    <p style="background:rgb(190, 188, 145);font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../songci/songci.html">宋词</a> > <strong>辛弃疾</strong></p>
+    <p style="background:#f6f3de;font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../songci/songci.html">宋词</a> > <strong>辛弃疾</strong></p>
     <p align="center"><a href="../songci/songci.html">宋词简介</a>  | <a href="sushi.html">苏轼</a> | <a href="liqingzhao.html">李清照</a> | <strong>辛弃疾</strong> | <a href="luyou.html">陆游</a> | <a href="liuyong.html">柳永</a></p>
     <hr>
     <p align="center"><img src="../images/xinqiji.jpg" width="650"></p>
@@ -28,52 +28,264 @@
     <div align="center">   
     <p style="font-size: 20px;">—————— <a href="#pzz">《破阵子·为陈同甫赋壮词以寄之》</a>|<a href="#yyl">《永遇乐·京口北固亭怀古》</a><br>|<a href="#qpl">《清平乐·村居》</a>|<a href="#xjy">《西江月·夜行黄沙道中》</a>|<a href="#qya">《青玉案·元夕》</a>——————</p>
     <hr>
-    <h2><a name="pzz" id="pzz"></a>《破阵子·为陈同甫赋壮词以寄之》</h2>
-    <p>
-        醉里挑灯看剑，梦回吹角连营。<br>
-        八百里分麾下炙，五十弦翻塞外声，沙场秋点兵。<br><br>
-        马作的卢飞快，弓如霹雳弦惊。<br>
-        了却君王天下事，赢得生前身后名。可怜白发生！</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="yyl" id="yyl"></a>《永遇乐·京口北固亭怀古》</h2>
-    <p>
-        千古江山，英雄无觅，孙仲谋处。<br>
-        舞榭歌台，风流总被，雨打风吹去。<br>
-        斜阳草树，寻常巷陌，人道寄奴曾住。<br>
-        想当年，金戈铁马，气吞万里如虎。<br><br>
-        元嘉草草，封狼居胥，赢得仓皇北顾。<br>
-        四十三年，望中犹记，烽火扬州路。<br>
-        可堪回首，佛狸祠下，一片神鸦社鼓。<br>
-        凭谁问：廉颇老矣，尚能饭否？</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="qpl" id="qpl"></a>《清平乐·村居》</h2>
-    <p>
-        茅檐低小，溪上青青草。<br>
-        醉里吴音相媚好，白发谁家翁媪？<br><br>
-        大儿锄豆溪东，中儿正织鸡笼。<br>
-        最喜小儿亡赖，溪头卧剥莲蓬。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="xjy" id="xjy"></a>《西江月·夜行黄沙道中》</h2>
-    <p>
-        明月别枝惊鹊，清风半夜鸣蝉。<br>
-        稻花香里说丰年，听取蛙声一片。<br><br>
-        七八个星天外，两三点雨山前。<br>
-        旧时茅店社林边，路转溪桥忽见。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="qya" id="qya"></a>《青玉案·元夕》</h2>
-    <p>
-        东风夜放花千树，更吹落，星如雨。<br>
-        宝马雕车香满路。<br>
-        凤箫声动，玉壶光转，一夜鱼龙舞。<br><br>
-        蛾儿雪柳黄金缕，笑语盈盈暗香去。<br>
-        众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。</p>
-    <p><a href="#mulu">返回目录</a></p>
+    <h2 class="poem-heading"><a name="pzz" id="pzz"></a>《破阵子·为陈同甫赋壮词以寄之》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('pzz-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('pzz-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('pzz-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="pzz-shi">音</button>
+        </span>
+    </h2>
+    <p id="pzz-shi" class="poem-shi">
+<span class="ln"><span class="py">zuì lǐ tiāo dēng kàn jiàn，mèng huí chuī jiǎo lián yíng。</span>醉里挑灯看剑，梦回吹角连营。</span>
+<span class="ln"><span class="py">bā bǎi lǐ fēn huī xià zhì，wǔ shí xián fān sāi wài shēng，shā chǎng qiū diǎn bīng。</span>八百里分麾下炙，五十弦翻塞外声，沙场秋点兵。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">mǎ zuò de lú fēi kuài，gōng rú pī lì xián jīng。</span>马作的卢飞快，弓如霹雳弦惊。</span>
+<span class="ln"><span class="py">le què jūn wáng tiān xià shì，yíng dé shēng qián shēn hòu míng。</span>了却君王天下事，赢得生前身后名。</span>
+<span class="ln"><span class="py">kě lián bái fā shēng！</span>可怜白发生！</span>
+    </p>
+<div class="poem-info" id="pzz-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">醉梦里挑亮油灯观看宝剑，恍惚间又回到了当年，各个军营里接连不断地响起号角声。把酒食分给部下享用，让乐器奏起雄壮的军乐鼓舞士气。这是秋天在战场上阅兵。</p>
+<p class="p-para">战马像的卢马一样跑得飞快，弓箭像惊雷一样震耳离弦。我一心想替君主完成收复国家失地的大业，取得世代相传的美名。一梦醒来，可惜已是白发人！</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="pzz-zhu">
+        <p class="panel-title">注释</p>
+<p><b>醉里：</b>醉酒之中。</p>
+<p><b>挑灯：</b>拨动灯火，点灯。 看剑：查看宝剑。准备上战场杀敌的形象。说明作者即使在醉酒之际也不忘抗敌。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="pzz-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">这首词通过创造雄奇的意境，生动地描绘出一位披肝沥胆、忠诚不二、勇往直前的将军形象。词人通过追忆早年抗金部队的阵容气概以及自己浴血奋战的沙场岁月，表达了对杀敌报国、收复失地的坚定信念，抒发了壮志难酬、英雄迟暮的悲愤心情。全词在结构上打破传统规则，前九句与末一句形成鲜明对比。前九句情感浓烈，刻画生动，为末一句的失望之情做了充分的铺垫和渲染。这种独特的艺术手法，展现出辛词的豪放风格和独创精神。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="yyl" id="yyl"></a>《永遇乐·京口北固亭怀古》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('yyl-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('yyl-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('yyl-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="yyl-shi">音</button>
+        </span>
+    </h2>
+    <p id="yyl-shi" class="poem-shi">
+<span class="ln"><span class="py">qiān gǔ jiāng shān，yīng xióng wú mì，sūn zhòng móu chù。</span>千古江山，英雄无觅，孙仲谋处。</span>
+<span class="ln"><span class="py">wǔ xiè gē tái，fēng liú zǒng bèi，yǔ dǎ fēng chuī qù。</span>舞榭歌台，风流总被，雨打风吹去。</span>
+<span class="ln"><span class="py">xié yáng cǎo shù，xún cháng xiàng mò，rén dào jì nú céng zhù。</span>斜阳草树，寻常巷陌，人道寄奴曾住。</span>
+<span class="ln"><span class="py">xiǎng dāng nián，jīn gē tiě mǎ，qì tūn wàn lǐ rú hǔ。</span>想当年，金戈铁马，气吞万里如虎。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">yuán jiā cǎo cǎo，fēng láng jū xū，yíng dé cāng huáng běi gù。</span>元嘉草草，封狼居胥，赢得仓皇北顾。</span>
+<span class="ln"><span class="py">sì shí sān nián，wàng zhōng yóu jì，fēng huǒ yáng zhōu lù。</span>四十三年，望中犹记，烽火扬州路。</span>
+<span class="ln"><span class="py">kě kān huí shǒu，bì lí cí xià，yī piàn shén yā shè gǔ。</span>可堪回首，佛狸祠下，一片神鸦社鼓。</span>
+<span class="ln"><span class="py">píng shuí wèn：lián pǒ lǎo yǐ，shàng néng fàn fǒu？</span>凭谁问：廉颇老矣，尚能饭否？</span>
+    </p>
+<div class="poem-info" id="yyl-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">历经千古的江山，再也难以寻觅到像孙权那样的英雄。当年的舞榭歌台还在，英雄人物却早已随着岁月的流逝不复存在了。斜阳照着长满草树的普通街道，人们说那里是刘裕曾经住过的地方。遥想当年，他指挥着强劲精良的兵马，气吞骄虏一如猛虎！</p>
+<p class="p-para">宋文帝兴兵北伐多么轻率鲁莽，想建立不朽战功封狼居胥，却落得仓皇逃命，北望追兵泪下无数的结果。四十三年过去了，如今瞭望长江北岸，仍然记得当年扬州地区金兵南侵时烽火连天的情景。哪里能忍心回头看啊？拓跋焘的行宫下，神鸦叫声应和着喧闹的社鼓。还有谁会询问，廉颇将军已老，他的身体是否强健如故？</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="yyl-zhu">
+        <p class="panel-title">注释</p>
+<p><b>京口：</b>今江苏镇江。</p>
+<p><b>北固亭：</b>在今镇江北固山上，又名北顾亭。</p>
+<p><b>孙仲谋：</b>孙权，字仲谋，曾在京口建都。</p>
+<p><b>寄奴：</b>南朝宋武帝刘裕的小名。</p>
+<p><b>舞榭歌台：</b>歌舞楼台，代指往日的繁华。</p>
+<p><b>金戈铁马：</b>代指精锐军队。</p>
+<p><b>元嘉草草：</b>指南朝宋文帝元嘉年间草率北伐。</p>
+<p><b>封狼居胥：</b>西汉霍去病追击匈奴至狼居胥山，筑坛祭天，代指北伐立功。</p>
+<p><b>仓皇北顾：</b>仓皇败退，回头北望。</p>
+<p><b>四十三年：</b>辛弃疾南归到写此词约四十三年。</p>
+<p><b>佛狸祠：</b>北魏太武帝拓跋焘（小名佛狸，读 bì lí）驻军处所建的祠庙。</p>
+<p><b>神鸦社鼓：</b>社日祭神的鼓声，指沦陷区民众安于异族统治。</p>
+<p><b>廉颇老矣，尚能饭否：</b>用战国廉颇典故，表达自己虽老仍想报国却无人重用的悲愤。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="yyl-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《永遇乐·京口北固亭怀古》是词人登临京口北固亭怀古忆昔所作，他怀着深重的忧虑和一腔悲愤写就此词。上片赞扬了在京口建立霸业的孙权和率军北伐气吞胡虏的刘裕，表示要像他们一样金戈铁马为国立功。下片，词人借讽刺刘义隆来表明自己坚决主张抗金但反对冒进误国的立场和态度。全词豪壮悲凉，义重情深，闪耀着爱国主义的思想光辉。全词用典贴切自然，紧扣题旨，增强了词篇的说服力和意境美。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="qpl" id="qpl"></a>《清平乐·村居》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('qpl-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('qpl-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('qpl-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="qpl-shi">音</button>
+        </span>
+    </h2>
+    <p id="qpl-shi" class="poem-shi">
+<span class="ln"><span class="py">máo yán dī xiǎo，xī shàng qīng qīng cǎo。</span>茅檐低小，溪上青青草。</span>
+<span class="ln"><span class="py">zuì lǐ wú yīn xiāng mèi hǎo，bái fā shuí jiā wēng ǎo？</span>醉里吴音相媚好，白发谁家翁媪？</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">dà ér chú dòu xī dōng，zhōng ér zhèng zhī jī lóng。</span>大儿锄豆溪东，中儿正织鸡笼。</span>
+<span class="ln"><span class="py">zuì xǐ xiǎo ér wú lài，xī tóu wò bō lián péng。</span>最喜小儿亡赖，溪头卧剥莲蓬。</span>
+    </p>
+<div class="poem-info" id="qpl-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">茅檐低小，溪上青青草。醉里吴音相媚好，白发谁家翁媪？</span><br>
+        <span class="yi-txt">茅屋矮小，溪边长满了翠绿的小草。含有醉意的吴地方音，听起来温柔又美好，那满头白发的是谁家的公婆父老？</span></p>
+<p><span class="yi-ori">大儿锄豆溪东，中儿正织鸡笼。最喜小儿亡赖，溪头卧剥莲蓬。</span><br>
+        <span class="yi-txt">大儿子在小溪东边的豆田锄草，二儿子正在家里编织鸡笼。最喜欢的顽皮的小儿子，他正横卧在溪头草丛，剥着刚摘下的莲蓬。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="qpl-zhu">
+        <p class="panel-title">注释</p>
+<p><b>清平乐：</b>词牌名。</p>
+<p><b>村居：</b>题目。</p>
+<p><b>茅檐：</b>代指茅屋。</p>
+<p><b>吴音：</b>吴地的方言。作者当时住在信州（今上饶），这一带的方言为吴音。</p>
+<p><b>相媚好：</b>指相互逗趣，取乐。</p>
+<p><b>翁媪：</b>老翁、老妇。</p>
+<p><b>锄豆：</b>锄掉豆田里的草。</p>
+<p><b>织：</b>编织，指编织鸡笼。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="qpl-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">这首词描绘了农村一个五口之家的生活环境和情景，借此表现人情之美和生活之趣。词中把这家老小的不同面貌、情态，以及他们美好的农家生活描写得有声有色，惟妙惟肖，活灵活现，具有浓厚的生活气息，透出词人对农村和平宁静生活的喜爱，呈现了一种清新宁馨的风格。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="xjy" id="xjy"></a>《西江月·夜行黄沙道中》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('xjy-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('xjy-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('xjy-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="xjy-shi">音</button>
+        </span>
+    </h2>
+    <p id="xjy-shi" class="poem-shi">
+<span class="ln"><span class="py">míng yuè bié zhī jīng què，qīng fēng bàn yè míng chán。</span>明月别枝惊鹊，清风半夜鸣蝉。</span>
+<span class="ln"><span class="py">dào huā xiāng lǐ shuō fēng nián，tīng qǔ wā shēng yī piàn。</span>稻花香里说丰年，听取蛙声一片。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">qī bā gè xīng tiān wài，liǎng sān diǎn yǔ shān qián。</span>七八个星天外，两三点雨山前。</span>
+<span class="ln"><span class="py">jiù shí máo diàn shè lín biān，lù zhuǎn xī qiáo hū xiàn。</span>旧时茅店社林边，路转溪桥忽见。</span>
+    </p>
+<div class="poem-info" id="xjy-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">明月别枝惊鹊，清风半夜鸣蝉。稻花香里说丰年，听取蛙声一片。</span><br>
+        <span class="yi-txt">皎洁的月光从树枝间掠过，惊飞了枝头喜鹊，清凉的晚风吹来仿佛听见了远处的蝉叫声。田里稻花飘香，蛙声阵阵，似乎在告诉人们今年是一个丰收年。</span></p>
+<p><span class="yi-ori">七八个星天外，两三点雨山前。旧时茅店社林边，路转溪桥忽见。</span><br>
+        <span class="yi-txt">天边几颗星星忽明忽暗，山前下起了淅淅沥沥的小雨。往日的小茅草屋还在土地庙的树林旁，道路转过溪水的源头，它便忽然出现在眼前。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="xjy-zhu">
+        <p class="panel-title">注释</p>
+<p><b>西江月：</b>词牌名。</p>
+<p><b>黄沙：</b>黄沙岭，在江西上饶的西面。</p>
+<p><b>别枝惊鹊：</b>惊动喜鹊飞离树枝。</p>
+<p><b>鸣蝉：</b>蝉叫声。</p>
+<p><b>旧时：</b>往日。</p>
+<p><b>茅店：</b>茅草盖的乡村客店。</p>
+<p><b>社林：</b>土地庙附近的树林。社，土地神庙。古时，村有社树，为祀神处，故曰社林。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="xjy-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《西江月·夜行黄沙道中》展现了稼轩词在雄浑豪迈之外的另一种境界，别具韵味。词人着意描写黄沙岭的夜景：明月清风，疏星稀雨，鹊惊蝉鸣，稻花飘香，蛙声一片。词中围绕着夜行的特点，展现出夏夜乡村田野的幽美景色及词人对丰收年景的由衷喜悦。全词从视觉、听觉和嗅觉三方面抒写夏夜的山村田园风光，其幽美如画，恬静自然，生动逼真，于平易中见真切、浑沦中见准确、连绵中呈陡转，是宋词中以农村生活为题材的佳作。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="qya" id="qya"></a>《青玉案·元夕》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('qya-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('qya-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('qya-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="qya-shi">音</button>
+        </span>
+    </h2>
+    <p id="qya-shi" class="poem-shi">
+<span class="ln"><span class="py">dōng fēng yè fàng huā qiān shù，gèng chuī luò、xīng rú yǔ。</span>东风夜放花千树，更吹落、星如雨。</span>
+<span class="ln"><span class="py">bǎo mǎ diāo chē xiāng mǎn lù。</span>宝马雕车香满路。</span>
+<span class="ln"><span class="py">fèng xiāo shēng dòng，yù hú guāng zhuǎn，yī yè yú lóng wǔ。</span>凤箫声动，玉壶光转，一夜鱼龙舞。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">é ér xuě liǔ huáng jīn lǚ，xiào yǔ yíng yíng àn xiāng qù。</span>蛾儿雪柳黄金缕，笑语盈盈暗香去。</span>
+<span class="ln"><span class="py">zhòng lǐ xún tā qiān bǎi dù。</span>众里寻他千百度。</span>
+<span class="ln"><span class="py">mò rán huí shǒu，nà rén què zài，dēng huǒ lán shān chù。</span>蓦然回首，那人却在，灯火阑珊处。</span>
+    </p>
+<div class="poem-info" id="qya-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">东风吹开了元宵夜的火树银花，花灯灿烂，就像千树花开。从天而降的礼花，犹如星雨。豪华的马车在飘香的街道行过。悠扬的凤箫声四处回荡，玉壶般的明月渐渐转向西边，一夜舞动鱼灯、龙灯不停歇。</p>
+<p class="p-para">美人头上都戴着华丽的饰物，笑语盈盈地随人群走过，只有衣香犹在暗中飘散。我在人群中寻找她千百回，猛然回头，不经意间却在灯火将尽未尽之处发现了她。</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="qya-zhu">
+        <p class="panel-title">注释</p>
+<p><b>元夕：</b>元宵节。</p>
+<p><b>花千树：</b>形容花灯之多，如千树花开。</p>
+<p><b>星如雨：</b>烟火纷纷坠落，如流星雨。</p>
+<p><b>宝马雕车：</b>装饰华美的马车。</p>
+<p><b>凤箫：</b>排箫一类乐器，这里指乐声。</p>
+<p><b>玉壶：</b>比喻明月，一说指精美的灯。</p>
+<p><b>鱼龙舞：</b>舞动鱼形、龙形的彩灯。</p>
+<p><b>蛾儿雪柳黄金缕：</b>古代女子元宵节戴的饰物。</p>
+<p><b>盈盈：</b>形容仪态美好、笑语轻盈。</p>
+<p><b>蓦然：</b>猛然、忽然。</p>
+<p><b>阑珊：</b>零落、稀疏。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="qya-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《青玉案·元夕》是古代词作中描写“上元佳节”主题的佳作。整首词巧妙地运用了对比手法，上阕描绘了花灯璀璨、乐声悠扬的元夕盛况，犹如一幅繁华热闹的画卷。而下阕则以寻找孤高女子为中心，透过灯火阑珊的细节，展现了她的独特魅力，这样的描写方式构思精妙，语言精致，含蓄婉转，余味无穷。词人从极力渲染元宵节绚丽多彩的热闹场面入手，反衬出一个孤高淡泊、超群拔俗、不同于金翠脂粉的女性形象，寄托着作者政治失意后不愿与世俗同流合污的孤高品格。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
     </div>
     <hr>
     <p align="center"><small><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></small></p>
     <p align="center"><small>&copy;2026年终末列车组 <a href="mailto:564997486@qq.com">联系我们</a></p>
 
 <script>
+function togglePanel(id, btn) {
+    var panel = document.getElementById(id);
+    if (!panel) return;
+    var show = !panel.classList.contains('show');
+    panel.classList.toggle('show', show);
+    btn.classList.toggle('on', show);
+}
+function togglePinyin(btn) {
+    var id = btn.getAttribute('data-poem') || 'djm-shi';
+    var poem = document.getElementById(id);
+    if (!poem) return;
+    var show = !poem.classList.contains('showpy');
+    poem.classList.toggle('showpy', show);
+    btn.classList.toggle('on', show);
+}
 if (window.top && window.top !== window) {
     var homeLinks = document.querySelectorAll('a[href="../index.html"]');
     for (var i = 0; i < homeLinks.length; i++) {

@@ -5,7 +5,7 @@
 <body>
     <h1 align="center">苏轼</h1>
     <p align="center"><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></p>
-    <p style="background:rgb(190, 188, 145);font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../songci/songci.html">宋词</a> > <strong>苏轼</strong></p>
+    <p style="background:#f6f3de;font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../songci/songci.html">宋词</a> > <strong>苏轼</strong></p>
     <p align="center"><a href="../songci/songci.html">宋词简介</a>  | <strong>苏轼</strong> | <a href="liqingzhao.html">李清照</a> | <a href="xinqiji.html">辛弃疾</a> | <a href="luyou.html">陆游</a> | <a href="liuyong.html">柳永</a></p>
     <hr>
     <p align="center"><img src="../images/sushi.png" width="750"></p>
@@ -30,59 +30,275 @@
     <div align="center">   
     <p style="font-size: 20px;">—————— <a href="#myjs">《水调歌头·明月几时有》</a>|<a href="#cbhg">《念奴娇·赤壁怀古》</a>|<a href="#mzcl">《江城子·密州出猎》</a><br>|<a href="#dfb">《定风波·莫听穿林打叶声》</a>|<a href="#snss">《江城子·十年生死两茫茫》</a>——————</p>
     <hr>
-    <h2><a name="myjs" id="myjs"></a>《水调歌头·明月几时有》</h2>
-    <p>
-        明月几时有？把酒问青天。<br>
-        不知天上宫阙，今夕是何年。<br>
-        我欲乘风归去，又恐琼楼玉宇，高处不胜寒。<br>
-        起舞弄清影，何似在人间。<br><br>
-        转朱阁，低绮户，照无眠。<br>
-        不应有恨，何事长向别时圆？<br>
-        人有悲欢离合，月有阴晴圆缺，此事古难全。<br>
-        但愿人长久，千里共婵娟。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="cbhg" id="cbhg"></a>《念奴娇·赤壁怀古》</h2>
-    <p>
-        大江东去，浪淘尽，千古风流人物。<br>
-        故垒西边，人道是，三国周郎赤壁。<br>
-        乱石穿空，惊涛拍岸，卷起千堆雪。<br>
-        江山如画，一时多少豪杰。<br><br>
-        遥想公瑾当年，小乔初嫁了，雄姿英发。<br>
-        羽扇纶巾，谈笑间，樯橹灰飞烟灭。<br>
-        故国神游，多情应笑我，早生华发。<br>
-        人生如梦，一尊还酹江月。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="mzcl" id="mzcl"></a>《江城子·密州出猎》</h2>
-    <p>
-        老夫聊发少年狂，左牵黄，右擎苍，<br>
-        锦帽貂裘，千骑卷平冈。<br>
-        为报倾城随太守，亲射虎，看孙郎。<br><br>
-        酒酣胸胆尚开张，鬓微霜，又何妨！<br>
-        持节云中，何日遣冯唐？<br>
-        会挽雕弓如满月，西北望，射天狼。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="dfb" id="dfb"></a>《定风波·莫听穿林打叶声》</h2>
-    <p>
-        莫听穿林打叶声，何妨吟啸且徐行。<br>
-        竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。<br><br>
-        料峭春风吹酒醒，微冷，山头斜照却相迎。<br>
-        回首向来萧瑟处，归去，也无风雨也无晴。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="snss" id="snss"></a>《江城子·十年生死两茫茫》</h2>
-    <p>
-        十年生死两茫茫，不思量，自难忘。<br>
-        千里孤坟，无处话凄凉。<br>
-        纵使相逢应不识，尘满面，鬓如霜。<br><br>
-        夜来幽梦忽还乡，小轩窗，正梳妆。<br>
-        相顾无言，惟有泪千行。<br>
-        料得年年肠断处，明月夜，短松冈。</p>
-    <p><a href="#mulu">返回目录</a></p>
+    <h2 class="poem-heading"><a name="myjs" id="myjs"></a>《水调歌头·明月几时有》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('myjs-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('myjs-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('myjs-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="myjs-shi">音</button>
+        </span>
+    </h2>
+    <p id="myjs-shi" class="poem-shi">
+<span class="ln"><span class="py">míng yuè jǐ shí yǒu？</span>明月几时有？</span>
+<span class="ln"><span class="py">bǎ jiǔ wèn qīng tiān。</span>把酒问青天。</span>
+<span class="ln"><span class="py">bù zhī tiān shàng gōng quē，jīn xī shì hé nián。</span>不知天上宫阙，今夕是何年。</span>
+<span class="ln"><span class="py">wǒ yù chéng fēng guī qù，yòu kǒng qióng lóu yù yǔ，gāo chù bù shèng hán。</span>我欲乘风归去，又恐琼楼玉宇，高处不胜寒。</span>
+<span class="ln"><span class="py">qǐ wǔ nòng qīng yǐng，hé shì zài rén jiān。</span>起舞弄清影，何似在人间。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">zhuǎn zhū gé，dī qǐ hù，zhào wú mián。</span>转朱阁，低绮户，照无眠。</span>
+<span class="ln"><span class="py">bù yīng yǒu hèn，hé shì zhǎng xiàng bié shí yuán？</span>不应有恨，何事长向别时圆？</span>
+<span class="ln"><span class="py">rén yǒu bēi huān lí hé，yuè yǒu yīn qíng yuán quē，cǐ shì gǔ nán quán。</span>人有悲欢离合，月有阴晴圆缺，此事古难全。</span>
+<span class="ln"><span class="py">dàn yuàn rén zhǎng jiǔ，qiān lǐ gòng chán juān。</span>但愿人长久，千里共婵娟。</span>
+    </p>
+<div class="poem-info" id="myjs-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">明月从什么时候才开始出现的？我端起酒杯遥问苍天。不知道在天上的宫殿，今天晚上是何月何年。我想要乘御清风回到天上，又恐怕在美玉砌成的楼宇中，受不住高耸九天的寒冷。此刻在月光下翩翩起舞玩赏着自己的清影，天上哪里比得上人世间？</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="myjs-zhu">
+        <p class="panel-title">注释</p>
+<p><b>丙辰：</b>宋神宗熙宁九年（1076年）。</p>
+<p><b>达旦：</b>直到天亮。</p>
+<p><b>子由：</b>苏轼的弟弟苏辙，字子由。</p>
+<p><b>把酒：</b>端起酒杯。</p>
+<p><b>宫阙：</b>宫殿楼阁，这里指月宫。</p>
+<p><b>琼楼玉宇：</b>美玉砌成的楼宇，指想象中的月宫。</p>
+<p><b>不胜寒：</b>经受不住寒冷。</p>
+<p><b>弄清影：</b>在月光下起舞，与影子嬉戏。</p>
+<p><b>何似：</b>哪里比得上。</p>
+<p><b>转朱阁，低绮户：</b>月光转过朱红的楼阁，低低照进雕花的窗户。</p>
+<p><b>不应有恨，何事长向别时圆：</b>月亮不该有什么怨恨，为什么总在人们离别时圆呢？</p>
+<p><b>婵娟：</b>指月亮。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="myjs-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">全词以咏月为中心，展现出游仙“归去”与直舞“人间”、离欲与入世的矛盾和困惑；同时表达了人生长久、乐观和美好的愿望。词中运用形象的描绘手法，创造出一个皓月当空、亲人千里、孤高旷远的意境，表达了词人对亲人的思念和美好祝愿，也显示出他在仕途失意时旷达超脱的胸怀和乐观的情致，典型地体现了苏词清雄旷达的风格。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="cbhg" id="cbhg"></a>《念奴娇·赤壁怀古》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('cbhg-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('cbhg-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('cbhg-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="cbhg-shi">音</button>
+        </span>
+    </h2>
+    <p id="cbhg-shi" class="poem-shi">
+<span class="ln"><span class="py">dà jiāng dōng qù，làng táo jǐn，qiān gǔ fēng liú rén wù。</span>大江东去，浪淘尽，千古风流人物。</span>
+<span class="ln"><span class="py">gù lěi xī biān，rén dào shì，sān guó zhōu láng chì bì。</span>故垒西边，人道是，三国周郎赤壁。</span>
+<span class="ln"><span class="py">luàn shí chuān kōng，jīng tāo pāi àn，juǎn qǐ qiān duī xuě。</span>乱石穿空，惊涛拍岸，卷起千堆雪。</span>
+<span class="ln"><span class="py">jiāng shān rú huà，yī shí duō shǎo háo jié。</span>江山如画，一时多少豪杰。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">yáo xiǎng gōng jǐn dāng nián，xiǎo qiáo chū jià le，xióng zī yīng fā。</span>遥想公瑾当年，小乔初嫁了，雄姿英发。</span>
+<span class="ln"><span class="py">yǔ shàn guān jīn，tán xiào jiān，qiáng lǔ huī fēi yān miè。</span>羽扇纶巾，谈笑间，樯橹灰飞烟灭。</span>
+<span class="ln"><span class="py">gù guó shén yóu，duō qíng yīng xiào wǒ，zǎo shēng huá fā。</span>故国神游，多情应笑我，早生华发。</span>
+<span class="ln"><span class="py">rén shēng rú mèng，yī zūn hái lèi jiāng yuè。</span>人生如梦，一尊还酹江月。</span>
+    </p>
+<div class="poem-info" id="cbhg-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">滚滚长江向东奔流而去，千百年来奔腾不息的滔滔巨浪，淘尽了多少杰出的英雄人物。</p>
+<p class="p-para">旧日营垒的西边，人们说，那就是三国时周瑜大破曹军的赤壁。</p>
+<p class="p-para">陡峭纷乱的岩壁高耸入云，汹涌的巨浪拍打江岸，卷起无数堆雪白的浪花。</p>
+<p class="p-para">江山壮丽如画，一时间涌现出多少英雄豪杰。</p>
+<p class="p-para">遥想当年的周公瑾，美丽的小乔刚嫁给他，他英姿勃发、风度翩翩。</p>
+<p class="p-para">手摇羽扇、头戴纶巾，谈笑之间，曹军战船便已灰飞烟灭。</p>
+<p class="p-para">神游于这古战场，应笑我太多愁善感，以致过早生出了白发。</p>
+<p class="p-para">人生如梦，还是举起一杯酒，祭奠江中的明月吧。</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="cbhg-zhu">
+        <p class="panel-title">注释</p>
+<p><b>赤壁：</b>黄州城外长江边的一处红色山崖（赤鼻矶），并非赤壁之战旧址。</p>
+<p><b>浪淘尽：</b>浪涛冲洗净尽，指英雄人物随历史长河逝去。</p>
+<p><b>故垒：</b>旧时的营垒。</p>
+<p><b>周郎：</b>周瑜，曾任吴国大都督。</p>
+<p><b>乱石穿空：</b>陡峭错落的石壁高插云霄。</p>
+<p><b>千堆雪：</b>形容浪花如雪。</p>
+<p><b>小乔初嫁了：</b>小乔刚刚嫁给他（周瑜）。</p>
+<p><b>雄姿英发：</b>姿容雄伟、英气勃发。</p>
+<p><b>羽扇纶巾：</b>手持羽扇、头戴纶巾，形容周瑜的儒将风度。</p>
+<p><b>樯橹：</b>桅杆与船桨，代指曹军战船。</p>
+<p><b>灰飞烟灭：</b>指曹军被火烧得化为灰烬。</p>
+<p><b>华发：</b>花白的头发。</p>
+<p><b>酹：</b>把酒洒在地上祭奠。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="cbhg-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《念奴娇·赤壁怀古》是豪放词的代表作之一。词人以壮美的月夜江景为引，又借对古代战场的凭吊和对风流人物才略、气度、功业的追念，曲折地表达了怀才不遇、功业未就、老大无成的忧愤之情，也展现了他对历史的深邃思考和对人生的旷达态度。全词借古抒怀，雄浑苍凉，气韵磅礴，笔力遒劲，境界宏阔，将写景、咏史、抒情融为一体，给人以撼魂荡魄的艺术力量，被誉为“古今绝唱”。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="mzcl" id="mzcl"></a>《江城子·密州出猎》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('mzcl-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('mzcl-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('mzcl-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="mzcl-shi">音</button>
+        </span>
+    </h2>
+    <p id="mzcl-shi" class="poem-shi">
+<span class="ln"><span class="py">lǎo fū liáo fā shào nián kuáng，</span>老夫聊发少年狂，</span>
+<span class="ln"><span class="py">zuǒ qiān huáng，yòu qíng cāng，</span>左牵黄，右擎苍，</span>
+<span class="ln"><span class="py">jǐn mào diāo qiú，qiān jì juǎn píng gāng。</span>锦帽貂裘，千骑卷平冈。</span>
+<span class="ln"><span class="py">wèi bào qīng chéng suí tài shǒu，qīn shè hǔ，kàn sūn láng。</span>为报倾城随太守，亲射虎，看孙郎。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">jiǔ hān xiōng dǎn shàng kāi zhāng。</span>酒酣胸胆尚开张。</span>
+<span class="ln"><span class="py">bìn wēi shuāng，yòu hé fáng！</span>鬓微霜，又何妨！</span>
+<span class="ln"><span class="py">chí jié yún zhōng，hé rì qiǎn féng táng？</span>持节云中，何日遣冯唐？</span>
+<span class="ln"><span class="py">huì wǎn diāo gōng rú mǎn yuè，xī běi wàng，shè tiān láng。</span>会挽雕弓如满月，西北望，射天狼。</span>
+    </p>
+<div class="poem-info" id="mzcl-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">我姑且抒发一下少年的豪情壮志，左手牵着黄犬，右臂托起苍鹰，头戴华美鲜艳的帽子，身穿貂鼠皮衣，带着浩浩荡荡的大部队像疾风一样，席卷平坦的山冈。为了报答百姓随行出猎的厚意，我决心亲自射杀老虎，让大家看看孙权当年搏虎的英姿。</p>
+<p class="p-para">我痛饮美酒，心胸开阔，胆气更为豪壮，两鬓微微发白，这又有何妨？什么时候皇帝会派人下来，就像汉文帝派遣冯唐去云中赦免魏尚一样信任我呢？那时我将使尽力气拉满雕弓就像满月一样，瞄准西北，射向西夏军队。</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="mzcl-zhu">
+        <p class="panel-title">注释</p>
+<p><b>江城子：</b>词牌名。</p>
+<p><b>密州：</b>今山东诸城。</p>
+<p><b>老夫：</b>作者自称。</p>
+<p><b>聊：</b>姑且，暂且。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="mzcl-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">这首词表达了词人强国抗敌的政治主张，抒写了其渴望报效朝廷的慷慨意气和壮志豪情。词人在上片开头直出会猎题意；次写围猎时的装束和盛况；然后转写自己的感想：坚定了亲手猎杀猛虎的决心，以回报全城军民的深厚情意。下片他叙述猎后的开怀畅饮，并以古代英雄魏尚自比，期望能担负起保卫国家、守卫边疆的重任。结尾直抒胸臆，展示出词人无畏的战斗精神和杀敌报国的豪情。全词“狂”态毕露，虽不乏郁愤之情，但气象恢弘、声势浩大、情志激越，呈现出刚健壮美的独特韵味。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="dfb" id="dfb"></a>《定风波·莫听穿林打叶声》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('dfb-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('dfb-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('dfb-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="dfb-shi">音</button>
+        </span>
+    </h2>
+    <p id="dfb-shi" class="poem-shi">
+<span class="ln"><span class="py">mò tīng chuān lín dǎ yè shēng，hé fáng yín xiào qiě xú xíng。</span>莫听穿林打叶声，何妨吟啸且徐行。</span>
+<span class="ln"><span class="py">zhú zhàng máng xié qīng shèng mǎ，shuí pà？</span>竹杖芒鞋轻胜马，谁怕？</span>
+<span class="ln"><span class="py">yī suō yān yǔ rèn píng shēng。</span>一蓑烟雨任平生。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">liào qiào chūn fēng chuī jiǔ xǐng，wēi lěng，shān tóu xié zhào què xiāng yíng。</span>料峭春风吹酒醒，微冷，山头斜照却相迎。</span>
+<span class="ln"><span class="py">huí shǒu xiàng lái xiāo sè chù，guī qù，yě wú fēng yǔ yě wú qíng。</span>回首向来萧瑟处，归去，也无风雨也无晴。</span>
+    </p>
+<div class="poem-info" id="dfb-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">不用注意那穿林打叶的雨声，何妨放开喉咙吟咏长啸从容而行。拄竹杖、穿芒鞋，走得比骑马还轻便，一身蓑衣任凭风吹雨打，照样过我的一生！</p>
+<p class="p-para">春风微凉吹醒我的酒意，微微有些冷，山头初晴的斜阳却应时相迎。回头望一眼走过来的风雨萧瑟的地方，我信步归去，不管它是风雨还是放晴。</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="dfb-zhu">
+        <p class="panel-title">注释</p>
+<p><b>定风波：</b>词牌名。</p>
+<p><b>吟啸：</b>吟咏长啸，形容意态潇洒。</p>
+<p><b>芒鞋：</b>草鞋。</p>
+<p><b>轻胜马：</b>比骑马还轻便。</p>
+<p><b>一蓑烟雨任平生：</b>披着蓑衣在风雨中过一生，任何风浪都不在乎。</p>
+<p><b>料峭：</b>形容春风微寒。</p>
+<p><b>向来：</b>刚才。</p>
+<p><b>萧瑟处：</b>指刚才风雨吹打的地方。</p>
+<p><b>也无风雨也无晴：</b>既无所谓风雨，也无所谓晴天，暗含超脱得失的人生态度。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="dfb-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《定风波·莫听穿林打叶声》为一篇醉归遇雨抒怀之作，全词即景生情，语言诙谐。词中通过野外途中偶遇风雨这一生活中的小事映射出一位正直文人在坎坷人生中力求解脱之道。词人借雨中潇洒徐行之举动，表现了其虽处逆境、屡遭挫折仍不畏惧、不颓丧的倔强性格和旷达胸怀。这首词于简朴中见深意，于寻常处生奇景，篇幅虽短，但意境深邃、内蕴丰富。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="snss" id="snss"></a>《江城子·十年生死两茫茫》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('snss-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('snss-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('snss-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="snss-shi">音</button>
+        </span>
+    </h2>
+    <p id="snss-shi" class="poem-shi">
+<span class="ln"><span class="py">shí nián shēng sǐ liǎng máng máng，bù sī liàng，zì nán wàng。</span>十年生死两茫茫，不思量，自难忘。</span>
+<span class="ln"><span class="py">qiān lǐ gū fén，wú chù huà qī liáng。</span>千里孤坟，无处话凄凉。</span>
+<span class="ln"><span class="py">zòng shǐ xiāng féng yīng bù shí，chén mǎn miàn，bìn rú shuāng。</span>纵使相逢应不识，尘满面，鬓如霜。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">yè lái yōu mèng hū hái xiāng，xiǎo xuān chuāng，zhèng shū zhuāng。</span>夜来幽梦忽还乡，小轩窗，正梳妆。</span>
+<span class="ln"><span class="py">xiāng gù wú yán，wéi yǒu lèi qiān xíng。</span>相顾无言，惟有泪千行。</span>
+<span class="ln"><span class="py">liào dé nián nián cháng duàn chù，míng yuè yè，duǎn sōng gāng。</span>料得年年肠断处，明月夜，短松冈。</span>
+    </p>
+<div class="poem-info" id="snss-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">你我夫妻诀别已经整整十年，强忍不去思念可终究难以忘怀。你的坟墓远在千里之外，没有地方能诉说我心中的悲伤凄凉。即使你我夫妻相逢怕是也认不出我来了，我四处奔波早已是灰尘满面两鬓如霜。</p>
+<p class="p-para">昨夜在梦中回到了家乡，看见你正在小室的窗前对镜梳妆。你我二人默默相对无言，只有泪落千行。料想你年年都为我柔肠寸断，在那凄冷的月明之夜，在那长满矮松的山冈上。</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="snss-zhu">
+        <p class="panel-title">注释</p>
+<p><b>乙卯：</b>公元1075年，即北宋熙宁八年。</p>
+<p><b>十年：</b>指结发妻子王弗去世已十年。</p>
+<p><b>思量：</b>想念。</p>
+<p><b>千里：</b>王弗葬地四川眉山与苏轼任所山东密州，相隔遥远，故称“千里”。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="snss-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《江城子·乙卯正月二十日夜记梦》表现了词人对亡妻的深沉思念和无尽哀伤。此词情意缠绵，字字血泪。上阕写词人对亡妻深沉的思念，是写实的笔法；下阕则通过记述梦境，抒发了词人对亡妻的执着不舍之情，为写虚的笔法。上阕记实，下阕记梦，虚实结合，更加强化了对亡妻的思念之情，使得全词的悲伤氛围更加浓厚。整首词采用了朴素自然的白描手法，语言质朴如话家常，但字字深入肺腑，情感真挚而深刻。全词于平淡言语中寄寓真淳，思致委婉，层次丰富，意境深远。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
     </div>
     <hr>
     <p align="center"><small><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></small></p>
     <p align="center"><small>&copy;2026年终末列车组 <a href="mailto:564997486@qq.com">联系我们</a></p>
 
 <script>
+function togglePanel(id, btn) {
+    var panel = document.getElementById(id);
+    if (!panel) return;
+    var show = !panel.classList.contains('show');
+    panel.classList.toggle('show', show);
+    btn.classList.toggle('on', show);
+}
+function togglePinyin(btn) {
+    var id = btn.getAttribute('data-poem') || 'djm-shi';
+    var poem = document.getElementById(id);
+    if (!poem) return;
+    var show = !poem.classList.contains('showpy');
+    poem.classList.toggle('showpy', show);
+    btn.classList.toggle('on', show);
+}
 if (window.top && window.top !== window) {
     var homeLinks = document.querySelectorAll('a[href="../index.html"]');
     for (var i = 0; i < homeLinks.length; i++) {

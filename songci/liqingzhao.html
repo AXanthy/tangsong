@@ -5,7 +5,7 @@
 <body>
     <h1 align="center">李清照</h1>
     <p align="center"><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></p>
-    <p style="background:rgb(190, 188, 145);font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../songci/songci.html">宋词</a> > <strong>李清照</strong></p>
+    <p style="background:#f6f3de;font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../songci/songci.html">宋词</a> > <strong>李清照</strong></p>
     <p align="center"><a href="../songci/songci.html">宋词简介</a>  | <a href="sushi.html">苏轼</a> | <strong>李清照</strong> | <a href="xinqiji.html">辛弃疾</a> | <a href="luyou.html">陆游</a> | <a href="liuyong.html">柳永</a></p>
     <hr>
     <p align="center"><img src="../images/liqingzhao.png" width="700"></p>
@@ -28,35 +28,248 @@
     <div align="center">   
     <p style="font-size: 20px;">—————— <a href="#zy">《如梦令·昨夜雨疏风骤》</a>|<a href="#cj">《如梦令·常记溪亭日暮》</a>|<a href="#yj">《渔家傲·记梦》</a><br>|<a href="#zhy">《醉花阴·薄雾浓云愁永昼》</a>|<a href="#wlc">《武陵春·春晚》</a>——————</p>
     <hr>
-    <h2><a name="zy" id="zy"></a>《如梦令·昨夜雨疏风骤》</h2>
-    <p>昨夜雨疏风骤，浓睡不消残酒。<br>试问卷帘人，却道海棠依旧。<br>知否，知否？应是绿肥红瘦。
-        </p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="cj" id="cj"></a>《如梦令·常记溪亭日暮》</h2>
-    <p>常记溪亭日暮，沉醉不知归路。<br>兴尽晚回舟，误入藕花深处。<br>争渡，争渡，惊起一滩鸥鹭。
-        </p>  
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="yj" id="yj"></a>《渔家傲·记梦》</h2>
-    <p>天接云涛连晓雾，<br>星河欲转千帆舞。<br>仿佛梦魂归帝所。<br>闻天语，殷勤问我归何处。<br><br>
-我报路长嗟日暮，<br>学诗谩有惊人句。<br>九万里风鹏正举。<br>风休住，蓬舟吹取三山去！
-        </p>  
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="zhy" id="zhy"></a>《醉花阴·薄雾浓云愁永昼》</h2>
-    <p>薄雾浓云愁永昼，瑞脑销金兽。<br>佳节又重阳，玉枕纱厨，半夜凉初透。<br><br>
-东篱把酒黄昏后，有暗香盈袖。<br>莫道不销魂，帘卷西风，人比黄花瘦。
-        </p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="wlc" id="wlc"></a>《武陵春·春晚》</h2>
-    <p>风住尘香花已尽，日晚倦梳头。<br>物是人非事事休，欲语泪先流。<br><br>
-闻说双溪春尚好，也拟泛轻舟。<br>只恐双溪舴艋舟，载不动许多愁。
-       </p>
-    <p><a href="#mulu">返回目录</a></p>
+    <h2 class="poem-heading"><a name="zy" id="zy"></a>《如梦令·昨夜雨疏风骤》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('zy-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('zy-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('zy-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="zy-shi">音</button>
+        </span>
+    </h2>
+    <p id="zy-shi" class="poem-shi">
+<span class="ln"><span class="py">zuó yè yǔ shū fēng zhòu，nóng shuì bù xiāo cán jiǔ。</span>昨夜雨疏风骤，浓睡不消残酒。</span>
+<span class="ln"><span class="py">shì wèn juǎn lián rén，què dào hǎi táng yī jiù。</span>试问卷帘人，却道海棠依旧。</span>
+<span class="ln"><span class="py">zhī fǒu，zhī fǒu？</span>知否，知否？</span>
+<span class="ln"><span class="py">yīng shì lǜ féi hóng shòu。</span>应是绿肥红瘦。</span>
+    </p>
+<div class="poem-info" id="zy-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">昨夜雨下得稀疏，风却刮得很急，我酣睡一夜，醒来酒意还未完全消除。</p>
+<p class="p-para">试问卷帘的侍女，她却说海棠花依然和以前一样。</p>
+<p class="p-para">你可知道，你可知道？此时应是绿叶繁茂、红花凋零了！</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="zy-zhu">
+        <p class="panel-title">注释</p>
+<p><b>疏：</b>指稀疏。</p>
+<p><b>雨疏风骤：</b>雨点稀疏，晚风急猛。</p>
+<p><b>浓睡不消残酒：</b>虽然睡了一夜，仍有余醉未消。</p>
+<p><b>浓睡：</b>酣睡 残酒：尚未消散的醉意。</p>
+<p><b>卷帘人：</b>有学者认为此指侍女。</p>
+<p><b>绿肥红瘦：</b>绿叶繁茂，红花凋零。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="zy-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">这首词借宿酒醒后询问花事的描写，委婉地表达了词人怜花惜花的心情，充分体现出她对大自然、对春天的热爱，也流露出其内心的苦闷。全词篇幅虽短，但含蓄蕴藉，意味深长；委曲精工，轻灵新巧，对人物心理情绪的刻画栩栩如生，以对话推动词意发展，跌宕起伏，极尽传神之妙，显示出词人深厚的艺术功力。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="cj" id="cj"></a>《如梦令·常记溪亭日暮》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('cj-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('cj-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('cj-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="cj-shi">音</button>
+        </span>
+    </h2>
+    <p id="cj-shi" class="poem-shi">
+<span class="ln"><span class="py">cháng jì xī tíng rì mù，chén zuì bù zhī guī lù。</span>常记溪亭日暮，沉醉不知归路。</span>
+<span class="ln"><span class="py">xīng jǐn wǎn huí zhōu，wù rù ǒu huā shēn chù。</span>兴尽晚回舟，误入藕花深处。</span>
+<span class="ln"><span class="py">zhēng dù，zhēng dù，</span>争渡，争渡，</span>
+<span class="ln"><span class="py">jīng qǐ yī tān ōu lù。</span>惊起一滩鸥鹭。</span>
+    </p>
+<div class="poem-info" id="cj-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">常记溪亭日暮，沉醉不知归路。</span><br>
+        <span class="yi-txt">时常记起溪边亭中游玩至日色已暮，沉迷在优美的景色中忘记了回家的路。尽了酒宴兴致才乘舟返回，不小心进入藕花深处。奋力把船划出去呀！奋力把船划出去！划船声惊起了一群鸥鹭。</span></p>
+<p><span class="yi-ori">兴尽晚回舟，误入藕花深处。</span><br>
+        <span class="yi-txt">经常记起在溪边的亭子游玩直到太阳落山的时候，被美景陶醉而流连忘返。游兴满足了，天黑往回划船，不小心划进了荷花池深处。划呀，划呀，惊动满滩的水鸟，都飞起来了。</span></p>
+<p><span class="yi-ori">争渡，争渡，惊起一滩鸥鹭。</span><br>
+        <span class="yi-txt">曾记得一次溪亭饮酒到日暮，喝得大醉回家找不着了道路。兴尽之后很晚才往回划船，却不小心进入了荷花深处。怎么渡，怎么渡？（最终）惊起水边满滩鸥鹭。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="cj-zhu">
+        <p class="panel-title">注释</p>
+<p><b>常记：</b>常常记得。</p>
+<p><b>溪亭：</b>溪边的亭子。</p>
+<p><b>日暮：</b>黄昏。</p>
+<p><b>沉醉：</b>大醉，也指陶醉。</p>
+<p><b>不知归路：</b>找不到回去的路。</p>
+<p><b>兴尽：</b>尽兴。</p>
+<p><b>回舟：</b>划船回去。</p>
+<p><b>藕花：</b>荷花。</p>
+<p><b>争渡：</b>怎么把船划出去（“争”意为怎）。</p>
+<p><b>鸥鹭：</b>沙鸥、白鹭等水鸟。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="cj-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《如梦令·常记溪亭日暮》是一首忆昔词。开头两句，便饱含着沉醉兴奋之情；接着写“兴尽”归家，又“误入”荷塘深处，别有天地，更令人流连；最后一句，纯洁天真，言尽而意未尽。 全词寥寥数语，看似随意而出，实则惜墨如金，每一句都蕴含着深意。其语言不事雕琢，自然流畅，它以女词人特有的细腻笔触，展示出词人早期生活的情趣和心境，洋溢着生活的气息和欢快的旋律。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="yj" id="yj"></a>《渔家傲·记梦》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('yj-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('yj-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('yj-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="yj-shi">音</button>
+        </span>
+    </h2>
+    <p id="yj-shi" class="poem-shi">
+<span class="ln"><span class="py">tiān jiē yún tāo lián xiǎo wù，xīng hé yù zhuǎn qiān fān wǔ。</span>天接云涛连晓雾，星河欲转千帆舞。</span>
+<span class="ln"><span class="py">fǎng fú mèng hún guī dì suǒ。</span>仿佛梦魂归帝所。</span>
+<span class="ln"><span class="py">wén tiān yǔ，yīn qín wèn wǒ guī hé chù。</span>闻天语，殷勤问我归何处。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">wǒ bào lù zhǎng jiē rì mù，xué shī màn yǒu jīng rén jù。</span>我报路长嗟日暮，学诗谩有惊人句。</span>
+<span class="ln"><span class="py">jiǔ wàn lǐ fēng péng zhèng jǔ。</span>九万里风鹏正举。</span>
+<span class="ln"><span class="py">fēng xiū zhù，péng zhōu chuī qǔ sān shān qù！</span>风休住，蓬舟吹取三山去！</span>
+    </p>
+<div class="poem-info" id="yj-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">水天相接，晨雾蒙蒙笼云涛。银河转动，像无数的船只在舞动风帆。梦魂仿佛回天庭，听见天帝在对我说话。他热情而又有诚意地问我要到哪里去。</p>
+<p class="p-para">我回答天帝路途还很漫长，现在已是黄昏却还未到达。即使我学诗能写出惊人的句子，又有什么用呢？长空九万里，大鹏冲天飞正高。风啊！千万别停息，将载着我的这一叶轻舟，直送往蓬莱三仙岛。</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="yj-zhu">
+        <p class="panel-title">注释</p>
+<p><b>星河：</b>银河。</p>
+<p><b>转：</b>《历代诗余》作“曙”。</p>
+<p><b>帝所：</b>天帝居住的地方。</p>
+<p><b>天语：</b>天帝的话语。</p>
+<p><b>嗟：</b>慨叹。</p>
+<p><b>报：</b>回答。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="yj-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">这首词气势磅礴，音调豪迈，是婉约派词宗李清照的另类作品。这首词写梦中海天溟蒙的景象及与天帝的问答，隐寓对社会现实的不满与失望和对理想境界的追求和向往。作者把真实的生活感受融入梦境，以浪漫主义的艺术构思、梦游的方式、奇妙的设想去倾述隐衷，寄托情思。全词打破了上片写景下片抒情或情景交错的惯常格局，以故事性情节为主干，以人神对话为内容，实现了梦幻与生活、历史与现实的有机结合，用典巧妙，景象壮阔，充分显示了作者性情中豪放不羁的一面。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="zhy" id="zhy"></a>《醉花阴·薄雾浓云愁永昼》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('zhy-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('zhy-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('zhy-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="zhy-shi">音</button>
+        </span>
+    </h2>
+    <p id="zhy-shi" class="poem-shi">
+<span class="ln"><span class="py">báo wù nóng yún chóu yǒng zhòu，ruì nǎo xiāo jīn shòu。</span>薄雾浓云愁永昼，瑞脑销金兽。</span>
+<span class="ln"><span class="py">jiā jié yòu chóng yáng，yù zhěn shā chú，bàn yè liáng chū tòu。</span>佳节又重阳，玉枕纱厨，半夜凉初透。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">dōng lí bǎ jiǔ huáng hūn hòu，yǒu àn xiāng yíng xiù。</span>东篱把酒黄昏后，有暗香盈袖。</span>
+<span class="ln"><span class="py">mò dào bù xiāo hún，lián juǎn xī fēng，rén bǐ huáng huā shòu。</span>莫道不销魂，帘卷西风，人比黄花瘦。</span>
+    </p>
+<div class="poem-info" id="zhy-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">薄雾弥漫，云层浓密，日子过得郁闷愁烦，金兽香炉内，龙脑香的烟雾袅袅升起。又到了重阳佳节，独自一人躺在玉枕纱帐之间，感受着夜晚的凉意逐渐侵入身体，直至将全身浸透。</p>
+<p class="p-para">在东篱边饮酒直到黄昏以后，淡淡的黄菊香气，随着微风，悄然溢满我的双袖。此情此景怎么能不令人伤感呢？秋风乍起，卷帘而入，帘内的人儿因过度思念身形竟比那黄花还要瘦弱。</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="zhy-zhu">
+        <p class="panel-title">注释</p>
+<p><b>云：</b>《古今词统》等作“雰”，《全芳备祖》作：“阴”。</p>
+<p><b>永昼：</b>漫长的白天。</p>
+<p><b>瑞脑：</b>一种薰香名。又称龙脑，即冰片。</p>
+<p><b>消：</b>一本作“销”，《花草粹编》等作“喷”。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="zhy-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">这首词为词人婚后所作，通过描述重阳节把酒赏菊的情景，烘托了一种凄凉寂寥的氛围，表达了词人思念丈夫而感到孤独、寂寞的心情。全词两阕，上阕咏时节，写别愁；下阕写赏菊情景。词人在自然景物的描写中，倾注自己浓重的情感色彩，使客观环境和自己内心的情绪融合交织。全词含蓄深沉，言有尽而意无穷，历来广为传诵。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="wlc" id="wlc"></a>《武陵春·春晚》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('wlc-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('wlc-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('wlc-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="wlc-shi">音</button>
+        </span>
+    </h2>
+    <p id="wlc-shi" class="poem-shi">
+<span class="ln"><span class="py">fēng zhù chén xiāng huā yǐ jǐn，rì wǎn juàn shū tóu。</span>风住尘香花已尽，日晚倦梳头。</span>
+<span class="ln"><span class="py">wù shì rén fēi shì shì xiū，yù yǔ lèi xiān liú。</span>物是人非事事休，欲语泪先流。</span>
+<span class="ln">&nbsp;</span>
+<span class="ln"><span class="py">wén shuō shuāng xī chūn shàng hǎo，yě nǐ fàn qīng zhōu。</span>闻说双溪春尚好，也拟泛轻舟。</span>
+<span class="ln"><span class="py">zhǐ kǒng shuāng xī zé měng zhōu，zài bù dòng xǔ duō chóu。</span>只恐双溪舴艋舟，载不动许多愁。</span>
+    </p>
+<div class="poem-info" id="wlc-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">风住尘香花已尽，日晚倦梳头。物是人非事事休，欲语泪先流。</span><br>
+        <span class="yi-txt">风停了，花儿已凋落殆尽，只有尘土还带有花的香气。抬头看看，日已高，却仍无心梳洗打扮。事物依旧在，人不似往昔了，一切事情都已经完结。想要倾诉自己的感慨，还未开口，眼泪先流下来。</span></p>
+<p><span class="yi-ori">闻说双溪春尚好，也拟泛轻舟。只恐双溪舴艋舟，载不动许多愁。</span><br>
+        <span class="yi-txt">听说双溪春景尚好，我也打算泛舟前去。只恐怕双溪蚱蜢般的小船，怕是载不动我内心沉重的忧愁啊！</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="wlc-zhu">
+        <p class="panel-title">注释</p>
+<p><b>武陵春：</b>词牌名，又作“武林春”、“花想容”，双调小令。双调四十八字，上下阕各四句三平韵。这首词为变格。</p>
+<p><b>尘香：</b>落花触地，尘土也沾染上落花的香气。花：一作“春”。</p>
+<p><b>日晚：</b>一作“日落”，一作“日晓”。梳头：古代的妇女习惯，起床后的第一件事是梳妆打扮。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="wlc-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">此词借暮春之景，深刻地揭示了词人内心深处的苦闷和忧愁，塑造了一个在孤苦凄凉环境中流荡无依的才女形象。上片以生动的笔触描绘出眼前暮春景物的破败和凄凉，让人感到无比的心痛和无助；下片则进一步展现出其悲愁的深重，运用新颖的艺术手法，以舴艋舟载不动愁的意象，巧妙地表达出悲愁的重量。词中充满了对故国故人的深沉思念、对物是人非的痛苦感受，情感真挚而深沉，有言尽而意未尽之美。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
     </div>
     <hr>
     <p align="center"><small><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></small></p>
     <p align="center"><small>&copy;2026年终末列车组 <a href="mailto:564997486@qq.com">联系我们</a></p>
 
 <script>
+function togglePanel(id, btn) {
+    var panel = document.getElementById(id);
+    if (!panel) return;
+    var show = !panel.classList.contains('show');
+    panel.classList.toggle('show', show);
+    btn.classList.toggle('on', show);
+}
+function togglePinyin(btn) {
+    var id = btn.getAttribute('data-poem') || 'djm-shi';
+    var poem = document.getElementById(id);
+    if (!poem) return;
+    var show = !poem.classList.contains('showpy');
+    poem.classList.toggle('showpy', show);
+    btn.classList.toggle('on', show);
+}
 if (window.top && window.top !== window) {
     var homeLinks = document.querySelectorAll('a[href="../index.html"]');
     for (var i = 0; i < homeLinks.length; i++) {

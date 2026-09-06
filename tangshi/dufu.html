@@ -5,7 +5,7 @@
 <body>
     <h1 align="center">杜甫</h1>
     <p align="center"><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></p>
-    <p style="background:rgb(190, 188, 145);font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../tangshi/tangshi.html">唐诗</a> > <strong>杜甫</strong></p>
+    <p style="background:#f6f3de;font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../tangshi/tangshi.html">唐诗</a> > <strong>杜甫</strong></p>
     <p align="center"><a href="../tangshi/tangshi.html">唐诗简介</a>   | <a href="libai.html">李白</a> | <strong>杜甫</strong> | <a href="baijvyi.html">白居易</a> | <a href="lishangyin.html">李商隐</a> | <a href="wang.html">王维</a></p>
     <hr>
     <p align="center"><img src="../images/dufu.jpeg" width="750"></p>
@@ -24,47 +24,293 @@
     <div align="center">   
     <p style="font-size: 20px;">—————— <a href="#cw">《春望》</a>|<a href="#dg">《登高》</a>|<a href="#dyyl">《登岳阳楼》</a>|<a href="#sx">《蜀相》</a>|<a href="#mw">《茅屋为秋风所破歌》</a>——————</p>
     <hr>
-    <h2><a name="djm" id="djm"></a>《春望》</h2>
-    <p>国破山河在，城春草木深。<br>
-感时花溅泪，恨别鸟惊心。<br>
-烽火连三月，家书抵万金。<br>
-白头搔更短，浑欲不胜簪。
-       </p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="dg" id="dg"></a>《登高》</h2>
-    <p>风急天高猿啸哀，渚清沙白鸟飞回。<br>
-无边落木萧萧下，不尽长江滚滚来。<br>
-万里悲秋常作客，百年多病独登台。<br>
-艰难苦恨繁霜鬓，潦倒新停浊酒杯。
-        </p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="dyyl" id="dyyl"></a>《登岳阳楼》</h2>
-    <p>昔闻洞庭水，今上岳阳楼。<br>
-吴楚东南坼，乾坤日夜浮。<br>
-亲朋无一字，老病有孤舟。<br>
-戎马关山北，凭轩涕泗流。
-        </p>  
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="sx" id="sx"></a>《蜀相》</h2>
-    <p>丞相祠堂何处寻？锦官城外柏森森。<br>
-映阶碧草自春色，隔叶黄鹂空好音。<br>
-三顾频烦天下计，两朝开济老臣心。<br>
-出师未捷身先死，长使英雄泪满襟。
-        </p>  
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="mw" id="mw"></a>《茅屋为秋风所破歌》</h2>
-    <p>八月秋高风怒号，卷我屋上三重茅。<br>茅飞渡江洒江郊，高者挂罥长林梢，下者飘转沉塘坳。<br><br>
-南村群童欺我老无力，忍能对面为盗贼。<br>公然抱茅入竹去，唇焦口燥呼不得，归来倚杖自叹息。<br><br>
-俄顷风定云墨色，秋天漠漠向昏黑。<br>布衾多年冷似铁，娇儿恶卧踏里裂。<br>床头屋漏无干处，雨脚如麻未断绝。<br>自经丧乱少睡眠，长夜沾湿何由彻！<br><br>
-安得广厦千万间，大庇天下寒士俱欢颜！<br>风雨不动安如山。<br>呜呼！<br>何时眼前突兀见此屋，吾庐独破受冻死亦足！
-        </p>
-    <p><a href="#mulu">返回目录</a></p>
+    <h2 class="poem-heading"><a name="djm" id="djm"></a>《春望》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('djm-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('djm-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('djm-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="djm-shi">音</button>
+        </span>
+    </h2>
+    <p id="djm-shi" class="poem-shi">
+<span class="ln"><span class="py">guó pò shān hé zài，chéng chūn cǎo mù shēn。</span>国破山河在，城春草木深。</span>
+<span class="ln"><span class="py">gǎn shí huā jiàn lèi，hèn bié niǎo jīng xīn。</span>感时花溅泪，恨别鸟惊心。</span>
+<span class="ln"><span class="py">fēng huǒ lián sān yuè，jiā shū dǐ wàn jīn。</span>烽火连三月，家书抵万金。</span>
+<span class="ln"><span class="py">bái tóu sāo gèng duǎn，hún yù bù shèng zān。</span>白头搔更短，浑欲不胜簪。</span>
+    </p>
+<div class="poem-info" id="djm-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">国破山河在，城春草木深。</span><br>
+        <span class="yi-txt">国都遭侵但山河依旧，长安城里的杂草和树木茂盛地疯长。</span></p>
+<p><span class="yi-ori">感时花溅泪，恨别鸟惊心。</span><br>
+        <span class="yi-txt">感伤国事，看到花开不禁潸然泪下，内心惆怅怨恨，听到鸟鸣，竟觉得那叫声也很揪心。</span></p>
+<p><span class="yi-ori">烽火连三月，家书抵万金。</span><br>
+        <span class="yi-txt">连绵的战火已经持续很长时间了，家书难得，一封抵得上万两黄金。</span></p>
+<p><span class="yi-ori">白头搔更短，浑欲不胜簪。</span><br>
+        <span class="yi-txt">愁绪缠绕，搔头思考，白发越搔越少，简直要不能插簪了。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="djm-zhu">
+        <p class="panel-title">注释</p>
+<p><b>国：</b>国都，指长安（今陕西西安）。</p>
+<p><b>破：</b>陷落。</p>
+<p><b>山河在：</b>旧日的山河仍然存在。</p>
+<p><b>城：</b>长安城。</p>
+<p><b>草木深：</b>指人烟稀少。</p>
+<p><b>感时：</b>为国家的时局而感伤。</p>
+<p><b>溅泪：</b>流泪。</p>
+<p><b>恨别：</b>怅恨离别。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="djm-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《春望》全诗铿然作响，气度浑灏，韵律为仄起仄落的五律正格，是千余年来脍炙人口的五律佳作。此诗前四句写春日长安凄惨破败的景象，饱含着兴衰感慨；后四句写诗人挂念亲人、心系国事的情怀，充溢着凄苦哀思。全诗格律严整，对仗精巧，声情悲壮。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="dg" id="dg"></a>《登高》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('dg-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('dg-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('dg-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="dg-shi">音</button>
+        </span>
+    </h2>
+    <p id="dg-shi" class="poem-shi">
+<span class="ln"><span class="py">fēng jí tiān gāo yuán xiào āi，zhǔ qīng shā bái niǎo fēi huí。</span>风急天高猿啸哀，渚清沙白鸟飞回。</span>
+<span class="ln"><span class="py">wú biān luò mù xiāo xiāo xià，bù jǐn zhǎng jiāng gǔn gǔn lái。</span>无边落木萧萧下，不尽长江滚滚来。</span>
+<span class="ln"><span class="py">wàn lǐ bēi qiū cháng zuò kè，bǎi nián duō bìng dú dēng tái。</span>万里悲秋常作客，百年多病独登台。</span>
+<span class="ln"><span class="py">jiān nán kǔ hèn fán shuāng bìn，liáo dǎo xīn tíng zhuó jiǔ bēi。</span>艰难苦恨繁霜鬓，潦倒新停浊酒杯。</span>
+    </p>
+<div class="poem-info" id="dg-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">风急天高猿啸哀，渚清沙白鸟飞回。</span><br>
+        <span class="yi-txt">风急天高猿猴啼叫显得十分悲哀，水清沙白的河洲上有鸟儿在急风中飞舞盘旋。</span></p>
+<p><span class="yi-ori">无边落木萧萧下，不尽长江滚滚来。</span><br>
+        <span class="yi-txt">无边无际的树木萧萧地飘下落叶，望不到头的长江水滚滚奔腾而来。</span></p>
+<p><span class="yi-ori">万里悲秋常作客，百年多病独登台。</span><br>
+        <span class="yi-txt">悲对秋景感慨远离故乡长期漂泊，晚年疾病缠身今日独上高台。</span></p>
+<p><span class="yi-ori">艰难苦恨繁霜鬓，潦倒新停浊酒杯。</span><br>
+        <span class="yi-txt">艰难至极，愁苦繁多，苍白鬓发如霜雪；生活潦倒失意，刚停下手里装着浊酒的酒杯。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="dg-zhu">
+        <p class="panel-title">注释</p>
+<p><b>渚：</b>水中的小块陆地。</p>
+<p><b>鸟飞回：</b>鸟在急风中飞舞盘旋。</p>
+<p><b>落木：</b>落叶。</p>
+<p><b>萧萧：</b>风吹树叶落下的声音。</p>
+<p><b>万里：</b>指离家万里，远离故乡。</p>
+<p><b>作客：</b>客居异乡。</p>
+<p><b>百年：</b>这里指晚年。</p>
+<p><b>繁霜鬓：</b>两鬓白发繁多。</p>
+<p><b>苦恨：</b>极恨、非常遗憾。</p>
+<p><b>潦倒：</b>衰颓、失意。</p>
+<p><b>新停：</b>刚刚停止，此时杜甫因病戒酒。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="dg-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">此诗前四句写景，述登高见闻，紧扣秋天的季节特色，描绘了江边空旷寂寥的景致。后四句抒情，写登高所感，诗人围绕自己的身世遭遇，抒发了他穷困潦倒、年老多病、流寓他乡的悲哀之情。他将个人身世之悲、抑郁不得志之苦融于悲凉的秋景之中，极尽沉郁顿挫。全诗语言精练，通篇对偶，一二句尚有句中对，充分展现出杜甫晚年对诗歌语言声律的精妙掌握。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="dyyl" id="dyyl"></a>《登岳阳楼》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('dyyl-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('dyyl-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('dyyl-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="dyyl-shi">音</button>
+        </span>
+    </h2>
+    <p id="dyyl-shi" class="poem-shi">
+<span class="ln"><span class="py">xī wén dòng tíng shuǐ，jīn shàng yuè yáng lóu。</span>昔闻洞庭水，今上岳阳楼。</span>
+<span class="ln"><span class="py">wú chǔ dōng nán chè，qián kūn rì yè fú。</span>吴楚东南坼，乾坤日夜浮。</span>
+<span class="ln"><span class="py">qīn péng wú yī zì，lǎo bìng yǒu gū zhōu。</span>亲朋无一字，老病有孤舟。</span>
+<span class="ln"><span class="py">róng mǎ guān shān běi，píng xuān tì sì liú。</span>戎马关山北，凭轩涕泗流。</span>
+    </p>
+<div class="poem-info" id="dyyl-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">昔闻洞庭水，今上岳阳楼。</span><br>
+        <span class="yi-txt">以前就听说洞庭湖波澜壮阔，今日终于如愿登上岳阳楼。</span></p>
+<p><span class="yi-ori">吴楚东南坼，乾坤日夜浮。</span><br>
+        <span class="yi-txt">浩瀚的湖水把吴楚两地分隔开来，整个天地仿似在湖中日夜浮动。</span></p>
+<p><span class="yi-ori">亲朋无一字，老病有孤舟。</span><br>
+        <span class="yi-txt">亲朋好友音信全无，年老多病唯有孤舟一叶飘零无定。</span></p>
+<p><span class="yi-ori">戎马关山北，凭轩涕泗流。</span><br>
+        <span class="yi-txt">北方边境的战争仍未止息，倚着窗户遥望，胸怀家国泪水横流。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="dyyl-zhu">
+        <p class="panel-title">注释</p>
+<p><b>洞庭水：</b>即洞庭湖，在今湖南北部，长江南岸，是中国第二淡水湖。</p>
+<p><b>岳阳楼：</b>即岳阳城西门楼，在湖南省岳阳市，下临洞庭湖，为游览胜地。</p>
+<p><b>吴楚东南坼：</b>吴楚两地在我国东南。坼（chè）：分裂。</p>
+<p><b>乾坤：</b>天地，或指日月。</p>
+<p><b>浮：</b>日月星辰和大地昼夜都飘浮在洞庭湖上。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="dyyl-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《登岳阳楼》是一首即景抒情之作，前两联写诗人登岳阳楼所见，用凝练的语言，将洞庭湖水势浩瀚无际的磅礴气势和宏伟壮丽的形象真实地描画出来，勾勒出一幅气象万千的画面。颈联表现自己政治生活坎坷，充满漂泊天涯的孤独和怀才不遇的感慨自伤。尾联则抒写出诗人眼见国家离散而又无可奈何，空有一腔热忱却报国无门的郁愤之情。这首诗意蕴丰厚，情调虽低沉抑郁，却吞吐自然，显得雄浑大气，气度超然。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="sx" id="sx"></a>《蜀相》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('sx-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('sx-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('sx-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="sx-shi">音</button>
+        </span>
+    </h2>
+    <p id="sx-shi" class="poem-shi">
+<span class="ln"><span class="py">chéng xiāng cí táng hé chù xún？jǐn guān chéng wài bǎi sēn sēn。</span>丞相祠堂何处寻？锦官城外柏森森。</span>
+<span class="ln"><span class="py">yìng jiē bì cǎo zì chūn sè，gé yè huáng lí kōng hǎo yīn。</span>映阶碧草自春色，隔叶黄鹂空好音。</span>
+<span class="ln"><span class="py">sān gù pín fán tiān xià jì，liǎng cháo kāi jì lǎo chén xīn。</span>三顾频烦天下计，两朝开济老臣心。</span>
+<span class="ln"><span class="py">chū shī wèi jié shēn xiān sǐ，zhǎng shǐ yīng xióng lèi mǎn jīn。</span>出师未捷身先死，长使英雄泪满襟。</span>
+    </p>
+<div class="poem-info" id="sx-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">丞相祠堂何处寻？锦官城外柏森森。</span><br>
+        <span class="yi-txt">去哪里寻找武侯诸葛亮的祠堂？在成都城外那柏树茂密的地方。</span></p>
+<p><span class="yi-ori">映阶碧草自春色，隔叶黄鹂空好音。</span><br>
+        <span class="yi-txt">碧草映照石阶，不过自为春色；隔着树叶的黄鹂，亦不过空作好音。</span></p>
+<p><span class="yi-ori">三顾频烦天下计，两朝开济老臣心。</span><br>
+        <span class="yi-txt">刘备为统一天下而三顾茅庐，问计于诸葛亮，辅佐两代君主的老臣忠心耿耿。</span></p>
+<p><span class="yi-ori">出师未捷身先死，长使英雄泪满襟。</span><br>
+        <span class="yi-txt">可惜出师伐魏还没有取得最后的胜利就先去世了，常使后代英雄感慨泪湿衣襟！</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="sx-zhu">
+        <p class="panel-title">注释</p>
+<p><b>蜀相：</b>三国蜀汉丞相，指诸葛亮（孔明)。诗题下有注：诸葛亮祠在昭烈庙西。</p>
+<p><b>丞相祠堂：</b>即诸葛武侯祠，在现在成都，晋李雄初建。</p>
+<p><b>锦官城：</b>成都的别名。</p>
+<p><b>柏（bǎi）森森：</b>柏树茂盛繁密的样子。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="sx-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《蜀相》是一首咏史怀古诗。此诗借游览古迹，表达了诗人对蜀汉丞相诸葛亮雄才大略、辅佐两朝、忠心报国的称颂以及对他出师未捷而身死的惋惜之情。诗中既有尊蜀正统的观念，又有才困时艰的感慨，字里行间寄寓感物思人的情怀。这首七律章法曲折宛转，自然紧凑。前两联记行写景，明快洒脱；后两联议事论人，忽变沉郁。全篇由景到人，由寻找瞻仰到追述回顾，由感叹缅怀到泪流满襟，顿挫豪迈，几度层折。全诗所怀者大，所感者深，雄浑悲壮，沉郁顿挫，具有震撼人心的巨大力量。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="mw" id="mw"></a>《茅屋为秋风所破歌》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('mw-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('mw-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('mw-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="mw-shi">音</button>
+        </span>
+    </h2>
+    <p id="mw-shi" class="poem-shi">
+<span class="ln"><span class="py">bā yuè qiū gāo fēng nù hào，juǎn wǒ wū shàng sān zhòng máo。</span>八月秋高风怒号，卷我屋上三重茅。</span>
+<span class="ln"><span class="py">máo fēi dù jiāng sǎ jiāng jiāo，gāo zhě guà juàn zhǎng lín shāo，xià zhě piāo zhuǎn chén táng ào。</span>茅飞渡江洒江郊，高者挂罥长林梢，下者飘转沉塘坳。</span>
+<span class="ln"><span class="py">nán cūn qún tóng qī wǒ lǎo wú lì，rěn néng duì miàn wèi dào zéi。</span>南村群童欺我老无力，忍能对面为盗贼。</span>
+<span class="ln"><span class="py">gōng rán bào máo rù zhú qù，chún jiāo kǒu zào hū bù dé，guī lái yǐ zhàng zì tàn xī。</span>公然抱茅入竹去，唇焦口燥呼不得，归来倚杖自叹息。</span>
+<span class="ln"><span class="py">é qǐng fēng dìng yún mò sè，qiū tiān mò mò xiàng hūn hēi。</span>俄顷风定云墨色，秋天漠漠向昏黑。</span>
+<span class="ln"><span class="py">bù qīn duō nián lěng shì tiě，jiāo ér è wò tà lǐ liè。</span>布衾多年冷似铁，娇儿恶卧踏里裂。</span>
+<span class="ln"><span class="py">chuáng tóu wū lòu wú gàn chù，yǔ jiǎo rú má wèi duàn jué。</span>床头屋漏无干处，雨脚如麻未断绝。</span>
+<span class="ln"><span class="py">zì jīng sàng luàn shǎo shuì mián，zhǎng yè zhān shī hé yóu chè！</span>自经丧乱少睡眠，长夜沾湿何由彻！</span>
+<span class="ln"><span class="py">ān dé guǎng shà qiān wàn jiān，dà bì tiān xià hán shì jù huān yán！</span>安得广厦千万间，大庇天下寒士俱欢颜！</span>
+<span class="ln"><span class="py">fēng yǔ bù dòng ān rú shān。</span>风雨不动安如山。</span>
+<span class="ln"><span class="py">wū hū！</span>呜呼！</span>
+<span class="ln"><span class="py">hé shí yǎn qián tū wù xiàn cǐ wū，wú lú dú pò shòu dòng sǐ yì zú！</span>何时眼前突兀见此屋，吾庐独破受冻死亦足！</span>
+    </p>
+<div class="poem-info" id="mw-yi">
+        <p class="panel-title">译文</p>
+<p class="p-para">八月秋深，狂风怒号，卷走了我屋顶上好几层茅草。茅草飞过江去散落在江郊，高的挂在高大树梢上，低的飘转沉入水塘和低洼处。</p>
+<p class="p-para">南村的孩子们欺我年老无力，竟忍心当着我的面做“贼”，抱着茅草跑进竹林里去。</p>
+<p class="p-para">我喊得唇焦口燥也喝止不住，只好拄着拐杖回来独自叹息。</p>
+<p class="p-para">不久风停了，天上乌云如墨，秋色灰蒙蒙地渐渐黑下来。</p>
+<p class="p-para">布被盖了多年冷得像铁，孩子睡相不好把被里都蹬破了。</p>
+<p class="p-para">床头屋漏没有一块干的地方，雨点像麻线一样密集不停。</p>
+<p class="p-para">自从经历战乱就很少安睡，长夜漫漫、屋湿难挨，怎样才能捱到天亮！</p>
+<p class="p-para">怎样才能得到千万间宽敞的大厦，庇护天下贫寒的读书人都喜笑颜开！</p>
+<p class="p-para">风雨再大也安稳如山。</p>
+<p class="p-para">唉！</p>
+<p class="p-para">什么时候眼前能出现这样的房屋，即使我的茅屋独破、受冻而死也心甘情愿！</p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="mw-zhu">
+        <p class="panel-title">注释</p>
+<p><b>秋高：</b>秋深。</p>
+<p><b>三重茅：</b>几层茅草，“重”读 chóng，指层。</p>
+<p><b>罥：</b>挂。</p>
+<p><b>长林梢：</b>高大的树梢。</p>
+<p><b>塘坳：</b>低洼积水的地方。</p>
+<p><b>忍能对面为盗贼：</b>竟忍心当着我的面做盗贼（能：如此、这样）。</p>
+<p><b>俄顷：</b>不久、一会儿。</p>
+<p><b>漠漠：</b>阴沉迷蒙的样子。</p>
+<p><b>衾：</b>被子。</p>
+<p><b>娇儿恶卧踏里裂：</b>孩子睡相不好，把被里蹬破了。</p>
+<p><b>雨脚如麻：</b>雨点密集，像麻线一样。</p>
+<p><b>丧乱：</b>战乱，指安史之乱。</p>
+<p><b>何由彻：</b>怎样才能挨到天亮（彻：通，到天明）。</p>
+<p><b>安得：</b>怎能得到。</p>
+<p><b>大庇：</b>全部庇护。</p>
+<p><b>突兀：</b>高耸的样子。</p>
+<p><b>见此屋：</b>出现这样的房屋（“见”通“现”）。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="mw-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《茅屋为秋风所破歌》是一首歌行体古诗。此诗叙述了诗人的茅屋被秋风所破以致全家遭雨淋的痛苦经历，他从中生出万千感慨，体现了忧国忧民的思想情感，是杜诗中的典范之作。这首诗叙事与抒情并重，叙事部分大篇幅写实，诗人诉述自家之苦，情绪含蓄压抑；而后的抒情部分将苦难加以升华，直抒忧民之情，情绪激越轩昂，展现出诗人的崇高理想和境界。叙事部分的有力铺垫为全诗最后的言志奠定了坚实的基础，如此抑扬曲折的情绪变换，充分体现出杜诗“沉郁顿挫”的风格。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
     </div>
     <hr>
     <p align="center"><small><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></small></p>
     <p align="center"><small>&copy;2026年终末列车组 <a href="mailto:564997486@qq.com">联系我们</a></p>
 
 <script>
+function togglePanel(id, btn) {
+    var panel = document.getElementById(id);
+    if (!panel) return;
+    var show = !panel.classList.contains('show');
+    panel.classList.toggle('show', show);
+    btn.classList.toggle('on', show);
+}
+function togglePinyin(btn) {
+    var id = btn.getAttribute('data-poem') || 'djm-shi';
+    var poem = document.getElementById(id);
+    if (!poem) return;
+    var show = !poem.classList.contains('showpy');
+    poem.classList.toggle('showpy', show);
+    btn.classList.toggle('on', show);
+}
 if (window.top && window.top !== window) {
     var homeLinks = document.querySelectorAll('a[href="../index.html"]');
     for (var i = 0; i < homeLinks.length; i++) {

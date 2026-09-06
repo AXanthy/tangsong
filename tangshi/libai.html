@@ -5,7 +5,7 @@
 <body>
     <h1 align="center">李白</h1>
     <p align="center"><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></p>
-    <p style="background:rgb(190, 188, 145);font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../tangshi/tangshi.html">唐诗</a> > <strong>李白</strong></p>
+    <p style="background:#f6f3de;font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../tangshi/tangshi.html">唐诗</a> > <strong>李白</strong></p>
     <p align="center"><a href="../tangshi/tangshi.html">唐诗简介</a>   | <strong>李白</strong>  | <a href="dufu.html">杜甫</a> | <a href="baijvyi.html">白居易</a> | <a href="lishangyin.html">李商隐</a> | <a href="wang.html">王维</a></p>
     <hr>
     <p align="center"><img src="../images/libai.jpeg" width="800"></p>
@@ -29,60 +29,349 @@
     <div align="center">   
    <p style="font-size: 20px;">————<a href="#djm">《渡荆门送别》</a>|<a href="#yxdz">《月下独酌》</a>|<a href="#xzx">《宣州谢朓楼饯别校书叔云》</a>|<a href="#xkx">《侠客行》</a>|<a href="#qjj">《将进酒》</a>————</p>
     <hr>
-    <h2><a name="djm" id="djm"></a>《渡荆门送别》</h2>
-    <p>
-       渡远荆门外，来从楚国游。<br>
-       山随平野尽，江入大荒流。<br>
-       月下飞天镜，云生结海楼。<br>
-       仍怜故乡水，万里送行舟。</p>
+    <h2 class="poem-heading"><a name="djm" id="djm"></a>《渡荆门送别》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('djm-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('djm-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('djm-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="djm-shi">音</button>
+        </span>
+    </h2>
+    <p id="djm-shi" class="poem-shi">
+        <span class="ln"><span class="py">dù yuǎn jīng mén wài，lái cóng chǔ guó yóu。</span>渡远荆门外，来从楚国游。</span>
+        <span class="ln"><span class="py">shān suí píng yě jìn，jiāng rù dà huāng liú。</span>山随平野尽，江入大荒流。</span>
+        <span class="ln"><span class="py">yuè xià fēi tiān jìng，yún shēng jié hǎi lóu。</span>月下飞天镜，云生结海楼。</span>
+        <span class="ln"><span class="py">réng lián gù xiāng shuǐ，wàn lǐ sòng xíng zhōu。</span>仍怜故乡水，万里送行舟。</span>
+    </p>
+    <div class="poem-info" id="djm-yi">
+        <p class="panel-title">译文</p>
+        <p><span class="yi-ori">渡远荆门外，来从楚国游。</span><br>
+        <span class="yi-txt">我乘舟渡江来到遥远的荆门外，来到战国时期楚国的境内游览。</span></p>
+        <p><span class="yi-ori">山随平野尽，江入大荒流。</span><br>
+        <span class="yi-txt">高山随着平坦广阔的原野的出现而逐渐消失，江水在广阔无际的田野中奔流。</span></p>
+        <p><span class="yi-ori">月下飞天镜，云生结海楼。</span><br>
+        <span class="yi-txt">月亮在水中的倒影好像天上飞下来的一面天镜，云彩升起，变幻无穷，结成了海市蜃楼。</span></p>
+        <p><span class="yi-ori">仍怜故乡水，万里送行舟。</span><br>
+        <span class="yi-txt">我依然喜爱这来自故乡之水，不远万里来送我东行的小舟。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="djm-zhu">
+        <p class="panel-title">注释</p>
+        <p><b>荆门：</b>山名，位于今湖北省宜都县西北长江南岸，与北岸虎牙山对峙，地势险要，自古即有楚蜀咽喉之称。</p>
+        <p><b>远：</b>远自。</p>
+        <p><b>楚国：</b>楚地，指湖北一带，春秋时期属楚国。</p>
+        <p><b>平野：</b>平坦广阔的原野。</p>
+        <p><b>江：</b>长江。</p>
+        <p><b>大荒：</b>广阔无际的田野。</p>
+        <p><b>月下飞天镜：</b>明月映入江水，如同从天上飞下的一面明镜。</p>
+        <p><b>海楼：</b>海市蜃楼，这里形容江上云霞形成的奇丽景象。</p>
+        <p><b>仍：</b>依然。<b>怜：</b>怜爱、喜爱。</p>
+        <p><b>故乡水：</b>指从四川流来的长江水。李白自幼生活在蜀地，故称蜀地为故乡。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="djm-shang">
+        <p class="panel-title">赏析</p>
+        <p class="p-para">《渡荆门送别》写于李白青年时期初次出蜀远游之际。他由水路经巴渝、出三峡，船过荆门山后，两岸高峻的群山渐渐退去，眼前展现出一望无际的平原旷野，于是写下这首诗。题目虽为“送别”，所送的并不是友人，而是故乡。</p>
+        <p class="p-para">首联“渡远荆门外，来从楚国游”点明此行已远出荆门、来到楚地，为全诗展开壮阔的画面作铺垫。颔联“山随平野尽，江入大荒流”以舟行的视角写景：一个“随”字，把静止的群山写得仿佛随着原野展开而不断退去，化静为动；一个“入”字，又写出长江奔涌直泻、流向辽阔原野的气势。两句境界开阔，也流露出诗人初出三峡、眼界顿开的喜悦之情。</p>
+        <p class="p-para">颈联“月下飞天镜，云生结海楼”一俯一仰：夜晚，月影映入平静的江面，如一面天镜飞下；白天，云气升腾变幻，又像结成了海市蜃楼。前句以水中明月反衬江水的平静，后句以云霞奇景衬托天空的辽阔，想象奇丽，富有浪漫色彩。</p>
+        <p class="p-para">尾联“仍怜故乡水，万里送行舟”点出“送别”的题旨。诗人不直说自己留恋故乡，反而说故乡之水有情，不远万里一路送行舟，从对面落笔，更深一层地写出对故乡的依恋，情味含蓄而绵长。</p>
+        <p class="p-para">全诗以叙事起，以抒情结，写景雄浑壮阔，抒情深婉动人，结构浑然一体。其中“山随平野尽，江入大荒流”一联，更是历来传诵的写江行壮景的名句。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
     <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="yxdz" id="yxdz"></a>《月下独酌》</h2>
-    <p>
-        花间一壶酒，独酌无相亲。<br>
-        举杯邀明月，对影成三人。<br>
-        月既不解饮，影徒随我身。<br>
-        暂伴月将影，行乐须及春。<br>
-        我歌月徘徊，我舞影零乱。<br>
-        醒时同交欢，醉后各分散。<br>
-        永结无情游，相期邈云汉。</p>
+    <h2 class="poem-heading"><a name="yxdz" id="yxdz"></a>《月下独酌》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('yxdz-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('yxdz-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('yxdz-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="yxdz-shi">音</button>
+        </span>
+    </h2>
+    <p id="yxdz-shi" class="poem-shi">
+        <span class="ln"><span class="py">huā jiān yī hú jiǔ，dú zhuó wú xiāng qīn。</span>花间一壶酒，独酌无相亲。</span>
+        <span class="ln"><span class="py">jǔ bēi yāo míng yuè，duì yǐng chéng sān rén。</span>举杯邀明月，对影成三人。</span>
+        <span class="ln"><span class="py">yuè jì bù jiě yǐn，yǐng tú suí wǒ shēn。</span>月既不解饮，影徒随我身。</span>
+        <span class="ln"><span class="py">zàn bàn yuè jiāng yǐng，xíng lè xū jí chūn。</span>暂伴月将影，行乐须及春。</span>
+        <span class="ln"><span class="py">wǒ gē yuè pái huái，wǒ wǔ yǐng líng luàn。</span>我歌月徘徊，我舞影零乱。</span>
+        <span class="ln"><span class="py">xǐng shí tóng jiāo huān，zuì hòu gè fēn sàn。</span>醒时同交欢，醉后各分散。</span>
+        <span class="ln"><span class="py">yǒng jié wú qíng yóu，xiāng qī miǎo yún hàn。</span>永结无情游，相期邈云汉。</span>
+    </p>
+    <div class="poem-info" id="yxdz-yi">
+        <p class="panel-title">译文</p>
+        <p><span class="yi-ori">花间一壶酒，独酌无相亲。</span><br>
+        <span class="yi-txt">在花丛中摆上一壶美酒，我自斟自饮，身边没有一个亲友。</span></p>
+        <p><span class="yi-ori">举杯邀明月，对影成三人。</span><br>
+        <span class="yi-txt">举杯向天，邀请明月，与我的影子相对，便成了三人。</span></p>
+        <p><span class="yi-ori">月既不解饮，影徒随我身。</span><br>
+        <span class="yi-txt">明月既然不能理解开怀畅饮之乐，影子也只能默默地跟随在我的左右。</span></p>
+        <p><span class="yi-ori">暂伴月将影，行乐须及春。</span><br>
+        <span class="yi-txt">暂且以明月、影子相伴，趁此春宵要及时行乐。</span></p>
+        <p><span class="yi-ori">我歌月徘徊，我舞影零乱。</span><br>
+        <span class="yi-txt">我吟诵诗篇，月亮伴随我徘徊；我手舞足蹈，影子便随我蹁跹零乱。</span></p>
+        <p><span class="yi-ori">醒时同交欢，醉后各分散。</span><br>
+        <span class="yi-txt">清醒时我们一同分享欢乐，酒醉以后就各自分散。</span></p>
+        <p><span class="yi-ori">永结无情游，相期邈云汉。</span><br>
+        <span class="yi-txt">但愿能永远尽情漫游，相约在缥缈的银河仙境边。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="yxdz-zhu">
+        <p class="panel-title">注释</p>
+        <p><b>独酌（zhuó）：</b>一个人饮酒。酌，饮酒。</p>
+        <p><b>无相亲：</b>没有亲近的人。</p>
+        <p><b>举杯邀明月，对影成三人：</b>举起酒杯邀请明月共饮，明月、诗人与月光下的身影合成三人。一说指月下人影、酒中人影与诗人共为三人。</p>
+        <p><b>不解：</b>不懂，不理解。</p>
+        <p><b>徒：</b>空，白白地。</p>
+        <p><b>将：</b>和，共。</p>
+        <p><b>及春：</b>趁着春光明媚之时。</p>
+        <p><b>徘徊：</b>来回移动。</p>
+        <p><b>零乱：</b>因起舞而身影纷乱。</p>
+        <p><b>同交欢：</b>一起欢乐。</p>
+        <p><b>无情游：</b>月和影没有知觉、不懂感情，诗人与它们结交共游，故称“无情游”。</p>
+        <p><b>相期邈（miǎo）云汉：</b>相约在遥远的天上仙境相见。期，约会；邈，遥远；云汉，银河。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="yxdz-shang">
+        <p class="panel-title">赏析</p>
+        <p class="p-para">《月下独酌·其一》约作于天宝三载（744年）李白身居长安、官场失意之时，写诗人由政治失意而产生的一种孤寂忧愁的情怀。</p>
+        <p class="p-para">诗人以独白的形式，自立自破，自破自立，诗情波澜起伏：先写花间独酌、无人相亲的冷清场面，忽发奇想，把天边的明月和月光下自己的影子拉了过来，连自己化成三人共饮，冷清清的场面顿时热闹起来。</p>
+        <p class="p-para">然而明月“不解饮”，影子也不能饮酒，诗人只好暂且与月、影相伴，趁春宵及时行乐。酒酣之后，诗人既歌且舞，歌时月色徘徊不去，舞时身影随人零乱，仿佛醒时同乐、醉后方散。末二句更与月、影“永结无情游，相期邈云汉”，以“无情”写有情，把孤独之感推向极处。</p>
+        <p class="p-para">全诗运用丰富的想象，表现出由独而不独、由不独而独的复杂情感。表面看来诗人真能自得其乐，背面却有无尽的凄凉；这种独而不独的旷达与排遣，正是诗人在长安难觅知音、无人共饮的寂寞心境的写照。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
     <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="xzx" id="xzx"></a>《宣州谢朓楼饯别校书叔云》</h2>
-    <p>
-        弃我去者，昨日之日不可留；<br>
-        乱我心者，今日之日多烦忧。<br>
-        长风万里送秋雁，对此可以酣高楼。<br>
-        蓬莱文章建安骨，中间小谢又清发。<br>
-        俱怀逸兴壮思飞，欲上青天揽明月。<br>
-        抽刀断水水更流，举杯消愁愁更愁。<br>
-        人生在世不称意，明朝散发弄扁舟。</p>  
+    <h2 class="poem-heading"><a name="xzx" id="xzx"></a>《宣州谢朓楼饯别校书叔云》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('xzx-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('xzx-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('xzx-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="xzx-shi">音</button>
+        </span>
+    </h2>
+    <p id="xzx-shi" class="poem-shi">
+        <span class="ln"><span class="py">qì wǒ qù zhě，zuó rì zhī rì bù kě liú；</span>弃我去者，昨日之日不可留；</span>
+        <span class="ln"><span class="py">luàn wǒ xīn zhě，jīn rì zhī rì duō fán yōu。</span>乱我心者，今日之日多烦忧。</span>
+        <span class="ln"><span class="py">cháng fēng wàn lǐ sòng qiū yàn，duì cǐ kě yǐ hān gāo lóu。</span>长风万里送秋雁，对此可以酣高楼。</span>
+        <span class="ln"><span class="py">péng lái wén zhāng jiàn ān gǔ，zhōng jiān xiǎo xiè yòu qīng fā。</span>蓬莱文章建安骨，中间小谢又清发。</span>
+        <span class="ln"><span class="py">jù huái yì xìng zhuàng sī fēi，yù shàng qīng tiān lǎn míng yuè。</span>俱怀逸兴壮思飞，欲上青天揽明月。</span>
+        <span class="ln"><span class="py">chōu dāo duàn shuǐ shuǐ gèng liú，jǔ bēi xiāo chóu chóu gèng chóu。</span>抽刀断水水更流，举杯消愁愁更愁。</span>
+        <span class="ln"><span class="py">rén shēng zài shì bù chèn yì，míng zhāo sàn fà nòng piān zhōu。</span>人生在世不称意，明朝散发弄扁舟。</span>
+    </p>
+    <div class="poem-info" id="xzx-yi">
+        <p class="panel-title">译文</p>
+        <p><span class="yi-ori">弃我去者，昨日之日不可留；</span><br>
+        <span class="yi-txt">弃我而去的昨天，早已不可挽留。</span></p>
+        <p><span class="yi-ori">乱我心者，今日之日多烦忧。</span><br>
+        <span class="yi-txt">乱我心绪的今天，使人无限烦忧。</span></p>
+        <p><span class="yi-ori">长风万里送秋雁，对此可以酣高楼。</span><br>
+        <span class="yi-txt">万里长风吹送南归的鸿雁，面对此景，正可以登上高楼开怀畅饮。</span></p>
+        <p><span class="yi-ori">蓬莱文章建安骨，中间小谢又清发。</span><br>
+        <span class="yi-txt">先生的文章颇具建安风骨，而我的诗风，也像谢朓那样清新秀丽。</span></p>
+        <p><span class="yi-ori">俱怀逸兴壮思飞，欲上青天揽明月。</span><br>
+        <span class="yi-txt">我们都满怀豪情逸兴，飞跃的神思像要腾空而上高高的青天，去摘取那皎洁的明月。</span></p>
+        <p><span class="yi-ori">抽刀断水水更流，举杯消愁愁更愁。</span><br>
+        <span class="yi-txt">拔刀断水，水却更加汹涌奔流；举杯消愁，愁情却更加浓烈。</span></p>
+        <p><span class="yi-ori">人生在世不称意，明朝散发弄扁舟。</span><br>
+        <span class="yi-txt">人生在世不能称心如意，不如披头散发，驾一叶扁舟归隐江湖。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="xzx-zhu">
+        <p class="panel-title">注释</p>
+        <p><b>谢朓（tiǎo）楼：</b>又名北楼、谢公楼，在宣州陵阳山上，南齐诗人谢朓任宣城太守时所建。</p>
+        <p><b>饯别：</b>设酒食送行。</p>
+        <p><b>校（jiào）书：</b>官名，即秘书省校书郎，掌管朝廷图书整理工作。</p>
+        <p><b>叔云：</b>李云，李白族叔，时为秘书省校书郎。</p>
+        <p><b>长风：</b>远风，大风。</p>
+        <p><b>酣（hān）高楼：</b>在高楼上畅饮。酣，畅饮。</p>
+        <p><b>蓬莱文章：</b>借指李云的文章。蓬莱，指东汉藏书之东观；唐人又以蓬莱借指秘书省。</p>
+        <p><b>建安骨：</b>汉末建安年间“三曹”“七子”诗文的刚健风骨。</p>
+        <p><b>小谢：</b>指谢朓。后人称谢灵运为“大谢”、谢朓为“小谢”，此处李白用以自比。</p>
+        <p><b>清发（fā）：</b>清新秀发，指诗文清俊飘逸。</p>
+        <p><b>逸兴（xìng）：</b>飘逸豪放的兴致。</p>
+        <p><b>壮思：</b>雄心壮志。</p>
+        <p><b>揽：</b>摘取。</p>
+        <p><b>不称（chèn）意：</b>称心如意。</p>
+        <p><b>明朝（zhāo）：</b>明天。</p>
+        <p><b>散发（fà）：</b>不束冠，意为不做官，形容狂放不羁。</p>
+        <p><b>弄扁（piān）舟：</b>乘小舟归隐江湖。扁舟，小船。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="xzx-shang">
+        <p class="panel-title">赏析</p>
+        <p class="p-para">《宣州谢朓楼饯别校书叔云》约作于天宝十二载（753年），是李白在宣州谢朓楼上为族叔李云饯别之作。诗人并不直言离别，而是重笔抒发自己怀才不遇的激愤，感情回复跌宕，语言明朗，音调激越高昂。</p>
+        <p class="p-para">发端陡起壁立，直抒郁结：“昨日之日”与“今日之日”，指许多弃我而去的岁月和接踵而至的今天，日月不居、时光难驻的烦忧，融铸着诗人对污浊政治现实的感受。随后笔锋突转，“长风万里送秋雁，对此可以酣高楼”，由极端苦闷忽然转入壮阔明朗的境界，展示出诗人豪迈阔大的胸襟。</p>
+        <p class="p-para">“蓬莱文章建安骨”以“蓬莱文章”借指李云的文章，赞其刚健风骨，兼合题中谢朓楼与校书；“俱怀逸兴壮思飞，欲上青天揽明月”则把双方豪情逸兴推向高潮，见出诗人对高洁理想境界的向往。“抽刀断水水更流，举杯消愁愁更愁”以眼前宛溪流水设喻，新奇贴切而富有生活气息，写出烦忧难遣、力图摆脱苦闷的倔强。</p>
+        <p class="p-para">结尾“人生在世不称意，明朝散发弄扁舟”虽有逃避现实的成分，但全诗仍贯注豪迈慷慨的情怀。整首诗一波三折、起落无端，忧愤苦闷中显现豪放雄放的气概，达到了豪放与自然和谐统一的境界。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
     <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="xkx" id="xkx"></a>《侠客行》</h2>
-    <p>赵客缦胡缨，吴钩霜雪明。<br>
-银鞍照白马，飒沓如流星。<br>
-十步杀一人，千里不留行。<br>
-事了拂衣去，深藏身与名。<br>
-闲过信陵饮，脱剑膝前横。<br>
-将炙啖朱亥，持觞劝侯嬴。<br>
-三杯吐然诺，五岳倒为轻。<br>
-眼花耳热后，意气素霓生。<br>
-救赵挥金槌，邯郸先震惊。<br>
-千秋二壮士，烜赫大梁城。<br>
-纵死侠骨香，不惭世上英。<br>
-谁能书阁下，白首太玄经。</p>  
+    <h2 class="poem-heading"><a name="xkx" id="xkx"></a>《侠客行》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('xkx-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('xkx-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('xkx-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="xkx-shi">音</button>
+        </span>
+    </h2>
+    <p id="xkx-shi" class="poem-shi">
+        <span class="ln"><span class="py">zhào kè màn hú yīng，wú gōu shuāng xuě míng。</span>赵客缦胡缨，吴钩霜雪明。</span>
+        <span class="ln"><span class="py">yín ān zhào bái mǎ，sà tà rú liú xīng。</span>银鞍照白马，飒沓如流星。</span>
+        <span class="ln"><span class="py">shí bù shā yī rén，qiān lǐ bù liú xíng。</span>十步杀一人，千里不留行。</span>
+        <span class="ln"><span class="py">shì liǎo fú yī qù，shēn cáng shēn yǔ míng。</span>事了拂衣去，深藏身与名。</span>
+        <span class="ln"><span class="py">xián guò xìn líng yǐn，tuō jiàn xī qián héng。</span>闲过信陵饮，脱剑膝前横。</span>
+        <span class="ln"><span class="py">jiāng zhì dàn zhū hài，chí shāng quàn hóu yíng。</span>将炙啖朱亥，持觞劝侯嬴。</span>
+        <span class="ln"><span class="py">sān bēi tǔ rán nuò，wǔ yuè dào wéi qīng。</span>三杯吐然诺，五岳倒为轻。</span>
+        <span class="ln"><span class="py">yǎn huā ěr rè hòu，yì qì sù ní shēng。</span>眼花耳热后，意气素霓生。</span>
+        <span class="ln"><span class="py">jiù zhào huī jīn chuí，hán dān xiān zhèn jīng。</span>救赵挥金槌，邯郸先震惊。</span>
+        <span class="ln"><span class="py">qiān qiū èr zhuàng shì，xuǎn hè dà liáng chéng。</span>千秋二壮士，烜赫大梁城。</span>
+        <span class="ln"><span class="py">zòng sǐ xiá gǔ xiāng，bù cán shì shàng yīng。</span>纵死侠骨香，不惭世上英。</span>
+        <span class="ln"><span class="py">shuí néng shū gé xià，bái shǒu tài xuán jīng。</span>谁能书阁下，白首太玄经。</span>
+    </p>
+    <div class="poem-info" id="xkx-yi">
+        <p class="panel-title">译文</p>
+        <p><span class="yi-ori">赵客缦胡缨，吴钩霜雪明。</span><br>
+        <span class="yi-txt">燕赵之地的侠客，头上系着没有纹饰的粗制帽带，腰间佩带的吴钩宝剑如霜雪一样明亮。</span></p>
+        <p><span class="yi-ori">银鞍照白马，飒沓如流星。</span><br>
+        <span class="yi-txt">银鞍与白马相互辉映，侠客策马飞奔，如飒飒流星一闪而过。</span></p>
+        <p><span class="yi-ori">十步杀一人，千里不留行。</span><br>
+        <span class="yi-txt">侠客武艺盖世，十步可斩杀一人，千里远行，无人能挡。</span></p>
+        <p><span class="yi-ori">事了拂衣去，深藏身与名。</span><br>
+        <span class="yi-txt">事成之后便拂袖而去，把自己的行迹与美名全都隐藏起来。</span></p>
+        <p><span class="yi-ori">闲过信陵饮，脱剑膝前横。</span><br>
+        <span class="yi-txt">闲暇时来到信陵君府上饮酒，解下宝剑横放在膝前。</span></p>
+        <p><span class="yi-ori">将炙啖朱亥，持觞劝侯嬴。</span><br>
+        <span class="yi-txt">把烤肉分给朱亥吃，举起酒杯劝侯嬴畅饮。</span></p>
+        <p><span class="yi-ori">三杯吐然诺，五岳倒为轻。</span><br>
+        <span class="yi-txt">几杯热酒下肚便慷慨许诺，一诺千金，五岳与之相比反倒显得轻了。</span></p>
+        <p><span class="yi-ori">眼花耳热后，意气素霓生。</span><br>
+        <span class="yi-txt">酒后眼花耳热，意气勃勃而生，如白虹贯日，感动苍天。</span></p>
+        <p><span class="yi-ori">救赵挥金槌，邯郸先震惊。</span><br>
+        <span class="yi-txt">朱亥为救赵国挥起金槌，赵都邯郸上下都为之震惊。</span></p>
+        <p><span class="yi-ori">千秋二壮士，烜赫大梁城。</span><br>
+        <span class="yi-txt">二位壮士的豪举，千秋之后仍在大梁城传为美谈，声名烜赫。</span></p>
+        <p><span class="yi-ori">纵死侠骨香，不惭世上英。</span><br>
+        <span class="yi-txt">他们纵然已经死去，侠骨犹香，不愧为一世英豪。</span></p>
+        <p><span class="yi-ori">谁能书阁下，白首太玄经。</span><br>
+        <span class="yi-txt">谁愿像扬雄那样枯坐书阁，白了头发只为撰写一部《太玄经》？</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="xkx-zhu">
+        <p class="panel-title">注释</p>
+        <p><b>侠客行：</b>乐府旧题，属歌行体。行，读 xíng，指歌行体的“行”。</p>
+        <p><b>赵客：</b>燕赵之地的侠客。自古燕赵多慷慨悲歌之士。</p>
+        <p><b>缦（màn）胡缨：</b>没有花纹的粗制帽带。缦，没有花纹；胡缨，北方民族样式的帽带。</p>
+        <p><b>吴钩：</b>宝刀名，产于吴地，刃形似钩。</p>
+        <p><b>霜雪明：</b>锋刃像霜雪一样明亮。</p>
+        <p><b>飒沓（sà tà）：</b>迅疾的样子。</p>
+        <p><b>信陵：</b>信陵君，战国四公子之一，礼贤下士，门下食客众多。</p>
+        <p><b>将炙（zhì）啖（dàn）朱亥：</b>把烤肉给朱亥吃。炙，烤肉；啖，吃。</p>
+        <p><b>侯嬴（yíng）：</b>原为魏都大梁东门守门人，后为信陵君门客。</p>
+        <p><b>然诺：</b>许诺、承诺。</p>
+        <p><b>五岳倒为轻：</b>承诺重于五岳，五岳与之相比反倒显得轻了。倒，反倒。</p>
+        <p><b>素霓（ní）：</b>白虹。古人认为将有不寻常的大事时，会出现“白虹贯日”等天象。</p>
+        <p><b>金槌：</b>即铁椎。朱亥曾袖藏铁椎击杀晋鄙，助信陵君救赵。</p>
+        <p><b>邯郸：</b>赵国都城。</p>
+        <p><b>烜赫（xuǎn hè）：</b>声名盛大。</p>
+        <p><b>太玄经：</b>西汉扬雄的哲学著作。扬雄曾在皇帝藏书的天禄阁任校书工作。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="xkx-shang">
+        <p class="panel-title">赏析</p>
+        <p class="p-para">《侠客行》这首古风表达了作者对侠客的倾慕之情，以及对拯危济困、建功立业生活的向往。李白在诗中借他人故事来抒发个人情怀。</p>
+        <p class="p-para">前八句刻画侠客的形象与行为：诗人以夸张笔法从装束、兵刃、坐骑写起，“赵客缦胡缨，吴钩霜雪明。银鞍照白马，飒沓如流星”，看似全在写物，却把侠客豪纵慷慨的气概写得栩栩如生。“十步杀一人，千里不留行”化用《庄子》典故，极言剑术高强；“事了拂衣去，深藏身与名”则写出侠客排忧解难、不图名利、重义守信的高尚人格。</p>
+        <p class="p-para">中间十二句引入信陵君与侯嬴、朱亥的故事。侯嬴、朱亥为信陵君礼遇，意气激昂如白虹贯日，许下重于五岳的诺言；朱亥挥槌击杀晋鄙助信陵君救赵，邯郸为之震惊，二位壮士声名烜赫大梁。诗人以“纵死侠骨香，不惭世上英”热烈礼赞侠客精神。</p>
+        <p class="p-para">末二句“谁能书阁下，白首太玄经”以枯坐书阁、皓首穷经的扬雄反衬侠客精神的崇高，对仅以著述传世的人生提出质疑。李白本就崇尚任侠，此诗亦是其豪情壮志的自我写照。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
     <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="qjj" id="qjj"></a>《将进酒》</h2>
-    <p>
-        君不见黄河之水天上来，<br>奔流到海不复回。<br>
-君不见高堂明镜悲白发，<br>朝如青丝暮成雪。<br>
-人生得意须尽欢，莫使金樽空对月。<br>
-天生我材必有用，千金散尽还复来。<br>
-烹羊宰牛且为乐，会须一饮三百杯。<br>
-岑夫子，丹丘生，将进酒，杯莫停。<br>
-钟鼓馔玉不足贵，但愿长醉不愿醒。<br>
-古来圣贤皆寂寞，惟有饮者留其名。<br>
-陈王昔时宴平乐，斗酒十千恣欢谑。<br>
-主人何为言少钱，径须沽取对君酌。<br>
-五花马、千金裘，<br>呼儿将出换美酒，与尔同销万古愁。</p>
+    <h2 class="poem-heading"><a name="qjj" id="qjj"></a>《将进酒》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('qjj-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('qjj-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('qjj-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="qjj-shi">音</button>
+        </span>
+    </h2>
+    <p id="qjj-shi" class="poem-shi">
+        <span class="ln"><span class="py">jūn bù jiàn huáng hé zhī shuǐ tiān shàng lái，</span>君不见黄河之水天上来，</span>
+        <span class="ln"><span class="py">bēn liú dào hǎi bù fù huí。</span>奔流到海不复回。</span>
+        <span class="ln"><span class="py">jūn bù jiàn gāo táng míng jìng bēi bái fà，</span>君不见高堂明镜悲白发，</span>
+        <span class="ln"><span class="py">zhāo rú qīng sī mù chéng xuě。</span>朝如青丝暮成雪。</span>
+        <span class="ln"><span class="py">rén shēng dé yì xū jìn huān，mò shǐ jīn zūn kōng duì yuè。</span>人生得意须尽欢，莫使金樽空对月。</span>
+        <span class="ln"><span class="py">tiān shēng wǒ cái bì yǒu yòng，qiān jīn sàn jìn hái fù lái。</span>天生我材必有用，千金散尽还复来。</span>
+        <span class="ln"><span class="py">pēng yáng zǎi niú qiě wéi lè，huì xū yī yǐn sān bǎi bēi。</span>烹羊宰牛且为乐，会须一饮三百杯。</span>
+        <span class="ln"><span class="py">cén fū zǐ，dān qiū shēng，qiāng jìn jiǔ，bēi mò tíng。</span>岑夫子，丹丘生，将进酒，杯莫停。</span>
+        <span class="ln"><span class="py">yǔ jūn gē yī qǔ，qǐng jūn wèi wǒ qīng ěr tīng。</span>与君歌一曲，请君为我倾耳听。</span>
+        <span class="ln"><span class="py">zhōng gǔ zhuàn yù bù zú guì，dàn yuàn cháng zuì bù yuàn xǐng。</span>钟鼓馔玉不足贵，但愿长醉不愿醒。</span>
+        <span class="ln"><span class="py">gǔ lái shèng xián jiē jì mò，wéi yǒu yǐn zhě liú qí míng。</span>古来圣贤皆寂寞，惟有饮者留其名。</span>
+        <span class="ln"><span class="py">chén wáng xī shí yàn píng lè，dǒu jiǔ shí qiān zì huān xuè。</span>陈王昔时宴平乐，斗酒十千恣欢谑。</span>
+        <span class="ln"><span class="py">zhǔ rén hé wèi yán shǎo qián，jìng xū gū qǔ duì jūn zhuó。</span>主人何为言少钱，径须沽取对君酌。</span>
+        <span class="ln"><span class="py">wǔ huā mǎ、qiān jīn qiú，</span>五花马、千金裘，</span>
+        <span class="ln"><span class="py">hū ér jiāng chū huàn měi jiǔ，yǔ ěr tóng xiāo wàn gǔ chóu。</span>呼儿将出换美酒，与尔同销万古愁。</span>
+    </p>
+    <div class="poem-info" id="qjj-yi">
+        <p class="panel-title">译文</p>
+        <p><span class="yi-ori">君不见黄河之水天上来，</span><br>
+        <span class="yi-txt">难道你没有看见，那汹涌的黄河之水从天上倾泻而来，</span></p>
+        <p><span class="yi-ori">奔流到海不复回。</span><br>
+        <span class="yi-txt">滔滔滚滚直奔大海，永不回还。</span></p>
+        <p><span class="yi-ori">君不见高堂明镜悲白发，</span><br>
+        <span class="yi-txt">难道你没有看见，在高堂上面对明镜深沉悲叹那一头白发，</span></p>
+        <p><span class="yi-ori">朝如青丝暮成雪。</span><br>
+        <span class="yi-txt">早晨还如青丝，傍晚却已变得如白雪一般。</span></p>
+        <p><span class="yi-ori">人生得意须尽欢，莫使金樽空对月。</span><br>
+        <span class="yi-txt">人生得意之时就要尽情欢乐，不要让金杯空对着一轮明月。</span></p>
+        <p><span class="yi-ori">天生我材必有用，千金散尽还复来。</span><br>
+        <span class="yi-txt">上天生我这样的才具，必定有它的用处；千金散尽了还会重新得来。</span></p>
+        <p><span class="yi-ori">烹羊宰牛且为乐，会须一饮三百杯。</span><br>
+        <span class="yi-txt">烹羊宰牛，暂且尽情作乐，应当一口气饮上它三百杯。</span></p>
+        <p><span class="yi-ori">岑夫子，丹丘生，将进酒，杯莫停。</span><br>
+        <span class="yi-txt">岑夫子、丹丘生啊，请快些喝酒吧，不要让酒杯停下。</span></p>
+        <p><span class="yi-ori">与君歌一曲，请君为我倾耳听。</span><br>
+        <span class="yi-txt">我为你们唱一支歌，请你们为我倾耳细听。</span></p>
+        <p><span class="yi-ori">钟鼓馔玉不足贵，但愿长醉不愿醒。</span><br>
+        <span class="yi-txt">钟鼓馔玉的富贵生活不值得珍惜，我只愿长醉不愿醒来。</span></p>
+        <p><span class="yi-ori">古来圣贤皆寂寞，惟有饮者留其名。</span><br>
+        <span class="yi-txt">自古以来的圣贤都已寂寞无名，只有善饮的人才能留下美名。</span></p>
+        <p><span class="yi-ori">陈王昔时宴平乐，斗酒十千恣欢谑。</span><br>
+        <span class="yi-txt">想当年陈王曹植在平乐观设宴，一斗美酒值十千钱，纵情畅饮、恣意欢谑。</span></p>
+        <p><span class="yi-ori">主人何为言少钱，径须沽取对君酌。</span><br>
+        <span class="yi-txt">主人为什么说钱少？只管去买酒来，让我与你对饮。</span></p>
+        <p><span class="yi-ori">五花马、千金裘，</span><br>
+        <span class="yi-txt">什么五花宝马、千金狐裘，</span></p>
+        <p><span class="yi-ori">呼儿将出换美酒，与尔同销万古愁。</span><br>
+        <span class="yi-txt">快叫侍儿拿去统统换成美酒，与你一同消解这无穷无尽的万古长愁！</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="qjj-zhu">
+        <p class="panel-title">注释</p>
+        <p><b>将（qiāng）进酒：</b>劝酒歌，属乐府旧题。将，请。</p>
+        <p><b>君不见：</b>乐府中常用的一种夸语，意为“你难道没有看见”。</p>
+        <p><b>天上来：</b>黄河发源于青海，因那里地势极高，故称。</p>
+        <p><b>高堂：</b>房屋的正室厅堂，这里指在高堂上明镜照见白发。</p>
+        <p><b>青丝：</b>喻柔软的黑发。</p>
+        <p><b>得意：</b>适意高兴的时候。</p>
+        <p><b>金樽（zūn）：</b>精美的酒杯。</p>
+        <p><b>会须：</b>正应当。</p>
+        <p><b>岑（cén）夫子：</b>岑勋。<b>丹丘生：</b>元丹丘。二人均为李白好友。</p>
+        <p><b>钟鼓馔（zhuàn）玉：</b>指富贵豪华的生活。钟鼓，富贵人家宴饮时奏乐；馔玉，食物精美如玉。</p>
+        <p><b>陈王：</b>陈思王曹植。<b>平乐：</b>观名，在洛阳西门外，为汉代豪贵的娱乐场所。</p>
+        <p><b>斗酒十千：</b>一斗酒值十千钱，形容酒美价昂。</p>
+        <p><b>恣（zì）：</b>纵情任意。<b>谑（xuè）：</b>戏谑、取乐。</p>
+        <p><b>主人：</b>指宴请李白的元丹丘。</p>
+        <p><b>径须：</b>干脆、只管。<b>沽：</b>买。</p>
+        <p><b>五花马：</b>指名贵的马，一说毛色作五花纹，一说颈毛修剪成五瓣。</p>
+        <p><b>千金裘（qiú）：</b>价值千金的皮衣。</p>
+        <p><b>尔：</b>你。<b>销：</b>同“消”。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+    <div class="poem-info" id="qjj-shang">
+        <p class="panel-title">赏析</p>
+        <p class="p-para">《将进酒》是李白沿用乐府古题创作的一首七言歌行，约作于天宝年间李白离京后漫游梁、宋，与友人岑勋、元丹丘相会之时。诗人借酒兴诗，酣畅淋漓地抒发怀才不遇的感慨，是李白咏酒诗中的代表作。</p>
+        <p class="p-para">开篇以两组“君不见”长句起兴：黄河之水天上来、奔流到海不复回，以空间之壮阔喻光阴一去不返；高堂明镜悲白发、朝如青丝暮成雪，把人生由青春到老写成朝夕之间，悲感极深却不堕纤弱，是巨人式的感伤。</p>
+        <p class="p-para">接着，“人生得意须尽欢，莫使金樽空对月”“天生我材必有用，千金散尽还复来”，于貌似消极中透出强烈的自信与入世的热望；“烹羊宰牛且为乐，会须一饮三百杯”及“岑夫子，丹丘生，将进酒，杯莫停”等短句，使狂放之情趋于高潮。“钟鼓馔玉不足贵，但愿长醉不愿醒”“古来圣贤皆寂寞，惟有饮者留其名”，则借古人酒杯浇自家块垒，诗情由狂放转为愤激。</p>
+        <p class="p-para">结尾以陈王曹植“斗酒十千恣欢谑”自比，进而典裘当马，“呼儿将出换美酒”，最后结穴于“与尔同销万古愁”，与开篇之“悲”相照应。全诗大起大落，以七言为主而杂以三、五言，参差错落；屡用“千金”“三百杯”“万古愁”等巨额数字，夸张而不觉空洞。情极悲愤而作狂放，语极豪纵而又沉着，充分体现了李白七言歌行的独特风格。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
     <p><a href="#mulu">返回目录</a></p>
     </div>
     <hr>
@@ -90,6 +379,21 @@
     <p align="center"><small>&copy;2026年终末列车组 <a href="mailto:564997486@qq.com">联系我们</a></p>
 
 <script>
+function togglePanel(id, btn) {
+    var panel = document.getElementById(id);
+    if (!panel) return;
+    var show = !panel.classList.contains('show');
+    panel.classList.toggle('show', show);
+    btn.classList.toggle('on', show);
+}
+function togglePinyin(btn) {
+    var id = btn.getAttribute('data-poem') || 'djm-shi';
+    var poem = document.getElementById(id);
+    if (!poem) return;
+    var show = !poem.classList.contains('showpy');
+    poem.classList.toggle('showpy', show);
+    btn.classList.toggle('on', show);
+}
 if (window.top && window.top !== window) {
     var homeLinks = document.querySelectorAll('a[href="../index.html"]');
     for (var i = 0; i < homeLinks.length; i++) {
@@ -102,12 +406,3 @@ if (window.top && window.top !== window) {
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-

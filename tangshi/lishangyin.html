@@ -5,7 +5,7 @@
 <body>
     <h1 align="center">李商隐</h1>
     <p align="center"><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></p>
-    <p style="background:rgb(190, 188, 145);font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../tangshi/tangshi.html">唐诗</a> > <strong>李商隐</strong></p>
+    <p style="background:#f6f3de;font-family: 楷体;font-size:medium">您的位置:<a href="../index.html">首页</a> > <a href="../tangshi/tangshi.html">唐诗</a> > <strong>李商隐</strong></p>
     <p align="center"><a href="../tangshi/tangshi.html">唐诗简介</a>   | <a href="libai.html">李白</a> | <a href="dufu.html">杜甫</a> | <a href="baijvyi.html">白居易</a> | <strong>李商隐</strong> | <a href="wang.html">王维</a></p>
     <hr>
     <p align="center"><img src="../images/lishangyin.png" width="750"></p>
@@ -28,41 +28,252 @@
     <div align="center">   
     <p style="font-size: 20px;">————<a href="#jins">《锦瑟》</a>|<a href="#xjsn">《无题·相见时难别亦难》</a>|<a href="#yyjb">《夜雨寄北》</a>|<a href="#jias">《贾生》</a>|<a href="#dlyy">《登乐游原》</a>————</p>
     <hr>
-    <h2><a name="jins" id="jins"></a>《锦瑟》</h2>
-    <p>
-        锦瑟无端五十弦，一弦一柱思华年。<br>
-        庄生晓梦迷蝴蝶，望帝春心托杜鹃。<br>
-        沧海月明珠有泪，蓝田日暖玉生烟。<br>
-        此情可待成追忆，只是当时已惘然。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="xjsn" id="xjsn"></a>《无题·相见时难别亦难》</h2>
-    <p>
-        相见时难别亦难，东风无力百花残。<br>
-        春蚕到死丝方尽，蜡炬成灰泪始干。<br>
-        晓镜但愁云鬓改，夜吟应觉月光寒。<br>
-        蓬山此去无多路，青鸟殷勤为探看。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="yyjb" id="yyjb"></a>《夜雨寄北》</h2>
-    <p>
-        君问归期未有期，巴山夜雨涨秋池。<br>
-        何当共剪西窗烛，却话巴山夜雨时。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="jias" id="jias"></a>《贾生》</h2>
-    <p>
-        宣室求贤访逐臣，贾生才调更无伦。<br>
-        可怜夜半虚前席，不问苍生问鬼神。</p>
-    <p><a href="#mulu">返回目录</a></p>
-    <h2><a name="dlyy" id="dlyy"></a>《登乐游原》</h2>
-    <p>
-        向晚意不适，驱车登古原。<br>
-        夕阳无限好，只是近黄昏。</p>
-    <p><a href="#mulu">返回目录</a></p>
+    <h2 class="poem-heading"><a name="jins" id="jins"></a>《锦瑟》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('jins-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('jins-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('jins-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="jins-shi">音</button>
+        </span>
+    </h2>
+    <p id="jins-shi" class="poem-shi">
+<span class="ln"><span class="py">jǐn sè wú duān wǔ shí xián，yī xián yī zhù sī huá nián。</span>锦瑟无端五十弦，一弦一柱思华年。</span>
+<span class="ln"><span class="py">zhuāng shēng xiǎo mèng mí hú dié，wàng dì chūn xīn tuō dù juān。</span>庄生晓梦迷蝴蝶，望帝春心托杜鹃。</span>
+<span class="ln"><span class="py">cāng hǎi yuè míng zhū yǒu lèi，lán tián rì nuǎn yù shēng yān。</span>沧海月明珠有泪，蓝田日暖玉生烟。</span>
+<span class="ln"><span class="py">cǐ qíng kě dài chéng zhuī yì，zhǐ shì dāng shí yǐ wǎng rán。</span>此情可待成追忆，只是当时已惘然。</span>
+    </p>
+<div class="poem-info" id="jins-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">锦瑟无端五十弦，一弦一柱思华年。</span><br>
+        <span class="yi-txt">精美的瑟为什么有五十根弦，一弦一柱都叫我追忆青春年华。</span></p>
+<p><span class="yi-ori">庄生晓梦迷蝴蝶，望帝春心托杜鹃。</span><br>
+        <span class="yi-txt">庄周在梦中化为蝴蝶翩翩起舞，望帝把自己的幽恨托身于杜鹃。</span></p>
+<p><span class="yi-ori">沧海月明珠有泪，蓝田日暖玉生烟。</span><br>
+        <span class="yi-txt">沧海明月高照，鲛人泣泪成珠；蓝田红日和暖，可看到良玉生烟。</span></p>
+<p><span class="yi-ori">此情可待成追忆，只是当时已惘然。</span><br>
+        <span class="yi-txt">此时此景为什么要现在才追忆，只因为当时心中只是一片茫然。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="jins-zhu">
+        <p class="panel-title">注释</p>
+<p><b>锦瑟：</b>装饰华美的瑟。</p>
+<p><b>无端：</b>没来由、平白无故。</p>
+<p><b>五十弦：</b>传说瑟原有五十弦。</p>
+<p><b>一弦一柱思华年：</b>每一弦每一柱都令人追忆青春年华。</p>
+<p><b>庄生晓梦迷蝴蝶：</b>用庄周梦蝶典故，写人生如梦。</p>
+<p><b>望帝春心托杜鹃：</b>用望帝化为杜鹃的传说，写哀怨难泯。</p>
+<p><b>沧海月明珠有泪：</b>传说鲛人泣泪成珠，写明珠含悲。</p>
+<p><b>蓝田日暖玉生烟：</b>蓝田美玉在暖日照耀下升起烟霭，写美好可望而不可即。</p>
+<p><b>可待：</b>岂待、哪能等到。</p>
+<p><b>惘然：</b>迷惘失意的样子。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="jins-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《锦瑟》诗题是按古诗的惯例以篇首二字为题，实是借瑟以隐题的无题诗。诗人在诗中追忆了自己的青春年华，伤感自己不幸的遭遇，他借用庄生梦蝶、杜鹃啼血、沧海珠泪、良玉生烟等典故，寄托其凄迷、悲慨、愤懑的心绪。全诗采用比兴手法，运用丰富的联想与想象，巧妙地将听觉的感受转化为视觉形象，以片段意象的组合，创造朦胧神秘的境界，诗中借助可视可感的诗歌形象来传达其真挚浓烈而又幽约深曲的情思。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="xjsn" id="xjsn"></a>《无题·相见时难别亦难》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('xjsn-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('xjsn-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('xjsn-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="xjsn-shi">音</button>
+        </span>
+    </h2>
+    <p id="xjsn-shi" class="poem-shi">
+<span class="ln"><span class="py">xiāng jiàn shí nán bié yì nán，dōng fēng wú lì bǎi huā cán。</span>相见时难别亦难，东风无力百花残。</span>
+<span class="ln"><span class="py">chūn cán dào sǐ sī fāng jǐn，là jù chéng huī lèi shǐ gàn。</span>春蚕到死丝方尽，蜡炬成灰泪始干。</span>
+<span class="ln"><span class="py">xiǎo jìng dàn chóu yún bìn gǎi，yè yín yīng jué yuè guāng hán。</span>晓镜但愁云鬓改，夜吟应觉月光寒。</span>
+<span class="ln"><span class="py">péng shān cǐ qù wú duō lù，qīng niǎo yīn qín wèi tàn kān。</span>蓬山此去无多路，青鸟殷勤为探看。</span>
+    </p>
+<div class="poem-info" id="xjsn-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">相见时难别亦难，东风无力百花残。</span><br>
+        <span class="yi-txt">相见很难，离别更难，何况在这东风无力、百花凋谢的暮春时节。</span></p>
+<p><span class="yi-ori">春蚕到死丝方尽，蜡炬成灰泪始干。</span><br>
+        <span class="yi-txt">春蚕结茧到死时丝才吐完，蜡烛要烧成灰烬时像泪一样的蜡油才能滴干。</span></p>
+<p><span class="yi-ori">晓镜但愁云鬓改，夜吟应觉月光寒。</span><br>
+        <span class="yi-txt">早晨梳妆照镜，只担忧如云的鬓发改变颜色，容颜不再。长夜独自吟诗不寐，必然感到冷月侵人。</span></p>
+<p><span class="yi-ori">蓬山此去无多路，青鸟殷勤为探看。</span><br>
+        <span class="yi-txt">蓬莱山离这儿不算太远，却无路可通，烦请青鸟一样的使者，殷勤地为我去探看。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="xjsn-zhu">
+        <p class="panel-title">注释</p>
+<p><b>无题：</b>唐代以来，有的诗人不愿意标出能够表示主题的题目时，常用“ 无题”作诗的标题。</p>
+<p><b>东风无力百花残：</b>这里指百花凋谢的暮春时节。东风，春风。残，凋零。</p>
+<p><b>丝方尽：</b>丝，与“思”谐音，以“丝”喻“思”，含相思之意。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="xjsn-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《无题》是一首以男女离别为题材创作的七言爱情诗。全诗以“别”字为诗眼，整体氛围绵缈深沉而不晦涩，语言华丽又自然，情怀凄苦而不失优美。全诗从头至尾都充满了痛苦、失望，但又缠绵、执着的情感。诗中每一联都是这种感情状态的反映，但是各联的具体意境又彼此有别。它们从不同的方面反复表现着融贯全诗的复杂感情，同时又相互衔接，纵向地展现出这种情感的心理过程。这首诗成功地再现了诗人心底深处的绵邈深情，情感联绵往复，细微精深，令人感动。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="yyjb" id="yyjb"></a>《夜雨寄北》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('yyjb-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('yyjb-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('yyjb-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="yyjb-shi">音</button>
+        </span>
+    </h2>
+    <p id="yyjb-shi" class="poem-shi">
+<span class="ln"><span class="py">jūn wèn guī qī wèi yǒu qī，bā shān yè yǔ zhǎng qiū chí。</span>君问归期未有期，巴山夜雨涨秋池。</span>
+<span class="ln"><span class="py">hé dāng gòng jiǎn xī chuāng zhú，què huà bā shān yè yǔ shí。</span>何当共剪西窗烛，却话巴山夜雨时。</span>
+    </p>
+<div class="poem-info" id="yyjb-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">君问归期未有期，巴山夜雨涨秋池。</span><br>
+        <span class="yi-txt">你问我回家的日期，我还没有确定日期，此刻巴山的夜雨淅淅沥沥，雨水已涨满秋池。</span></p>
+<p><span class="yi-ori">何当共剪西窗烛，却话巴山夜雨时。</span><br>
+        <span class="yi-txt">什么时候我们才能一起秉烛长谈，相互倾诉今宵巴山夜雨中的思念之情。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="yyjb-zhu">
+        <p class="panel-title">注释</p>
+<p><b>寄北：</b>写诗寄给北方的人。诗人当时在巴蜀（现在四川省），他的亲友在长安，所以说“寄北”。这首诗表达了诗人对亲友的深刻怀念。</p>
+<p><b>君：</b>对对方的尊称，等于现代汉语中的“您”。</p>
+<p><b>归期：</b>指回家的日期。</p>
+<p><b>巴山：</b>指大巴山，在陕西南部和四川东北交界处。这里泛指巴蜀一带。</p>
+<p><b>秋池：</b>秋天的池塘。</p>
+<p><b>何当：</b>什么时候。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="yyjb-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《夜雨寄北》是一首七言绝句。此诗前两句以问答和对眼前环境的抒写，阐发了诗人孤寂的情怀和深切的思念；后两句则设想来日重逢谈心的欢悦情景，反衬出今夜的孤寂。诗即兴写来，写出刹那间情感的曲折变化，展现了质朴、自然的风格。与李商隐的其他诗词相比，这首诗更注重情感的直接表达，不依赖华丽的辞藻和复杂的象征。全诗构思新巧，跌宕有致，言浅意深，语短情长。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="jias" id="jias"></a>《贾生》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('jias-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('jias-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('jias-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="jias-shi">音</button>
+        </span>
+    </h2>
+    <p id="jias-shi" class="poem-shi">
+<span class="ln"><span class="py">xuān shì qiú xián fǎng zhú chén，jiǎ shēng cái diào gèng wú lún。</span>宣室求贤访逐臣，贾生才调更无伦。</span>
+<span class="ln"><span class="py">kě lián yè bàn xū qián xí，bù wèn cāng shēng wèn guǐ shén。</span>可怜夜半虚前席，不问苍生问鬼神。</span>
+    </p>
+<div class="poem-info" id="jias-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">宣室求贤访逐臣，贾生才调更无伦。</span><br>
+        <span class="yi-txt">汉文帝求贤在未央宫前殿召见被贬的臣子，贾谊的政治才能无人能比。</span></p>
+<p><span class="yi-ori">可怜夜半虚前席，不问苍生问鬼神。</span><br>
+        <span class="yi-txt">可惜文帝半夜移膝靠近贾谊听讲，不问百姓生计只问起鬼神之事。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="jias-zhu">
+        <p class="panel-title">注释</p>
+<p><b>贾生：</b>指贾谊（前200—前168），西汉著名的政论家、文学家，力主改革弊政，提出了许多重要政治主张，但却遭谗被贬，一生抑郁不得志。</p>
+<p><b>宣室：</b>汉代长安城中未央宫前殿的正室。</p>
+<p><b>逐臣：</b>被放逐之臣，指贾谊曾被贬谪。</p>
+<p><b>才调：</b>才华，这里指贾生的政治才能。</p>
+<p><b>可怜：</b>可惜，可叹。</p>
+<p><b>虚：</b>徒然。</p>
+<p><b>前席：</b>在坐席上移膝靠近对方。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="jias-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">《贾生》是一首咏史诗。此诗通过讽刺汉文帝虽能求贤却不知贤的行为，反映了晚唐的社会现实：晚唐帝王也像文帝一般，表面开明，实则昏聩。全诗着眼点不在个人的穷通得失，而在于指出封建统治者不能真正重视人才，使其在政治上发挥作用。</p>
+<p class="p-para">诗中选取汉文帝宣室召见贾谊，夜半倾谈的情节，是为写文帝不能识贤、任贤；结句则揭露了晚唐皇帝服药求仙从而荒于政事、不顾民生的昏庸特性。全诗借古讽今，寓慨于讽，深刻而具有力度，在对贾谊怀才不遇的同情中，寄寓着诗人自己在政治上备受排挤、壮志难酬的感伤。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
+    <h2 class="poem-heading"><a name="dlyy" id="dlyy"></a>《登乐游原》
+        <span class="poem-tools">
+            <button type="button" class="tag" title="显示/隐藏译文" onclick="togglePanel('dlyy-yi', this)">译</button>
+            <button type="button" class="tag" title="显示/隐藏注释" onclick="togglePanel('dlyy-zhu', this)">注</button>
+            <button type="button" class="tag" title="显示/隐藏赏析" onclick="togglePanel('dlyy-shang', this)">赏</button>
+            <button type="button" class="tag" title="显示/隐藏拼音" onclick="togglePinyin(this)" data-poem="dlyy-shi">音</button>
+        </span>
+    </h2>
+    <p id="dlyy-shi" class="poem-shi">
+<span class="ln"><span class="py">xiàng wǎn yì bù shì，qū chē dēng gǔ yuán。</span>向晚意不适，驱车登古原。</span>
+<span class="ln"><span class="py">xī yáng wú xiàn hǎo，zhǐ shì jìn huáng hūn。</span>夕阳无限好，只是近黄昏。</span>
+    </p>
+<div class="poem-info" id="dlyy-yi">
+        <p class="panel-title">译文</p>
+<p><span class="yi-ori">向晚意不适，驱车登古原。</span><br>
+        <span class="yi-txt">傍晚时分心情郁郁不畅，驾车前往古原散心登高。</span></p>
+<p><span class="yi-ori">夕阳无限好，只是近黄昏。</span><br>
+        <span class="yi-txt">夕阳映照下的景色无比美好，只可惜已临近黄昏。</span></p>
+        <p class="info-src">译文参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="dlyy-zhu">
+        <p class="panel-title">注释</p>
+<p><b>乐游原：</b>长安城南的游览胜地，本为汉代乐游苑。</p>
+<p><b>向晚：</b>傍晚。</p>
+<p><b>意不适：</b>心情不舒畅。</p>
+<p><b>驱车：</b>驾车。</p>
+<p><b>古原：</b>即乐游原。</p>
+<p><b>夕阳无限好，只是近黄昏：</b>晚景虽好却已临近黄昏，暗含身世迟暮、国运日衰之叹。</p>
+        <p class="info-src">注释参考：古诗文网</p>
+    </div>
+<div class="poem-info" id="dlyy-shang">
+        <p class="panel-title">赏析</p>
+<p class="p-para">这首诗赞美黄昏前的绮丽风光，抒发了诗人即景而生的感慨。前两句点出其登原游览的原因：由于黄昏日暮心情不适，便驱车登上古原；后两句极力赞叹晚景之美：在夕阳余晖照耀下，涂抹上一层金色的世界，此两句并非简单地盛赞无限美好的夕阳，其意蕴丰富，具有极高的美学价值和思想价值。全诗语言明白如话，毫无雕饰，节奏明快，感喟深沉，富于哲理。</p>
+        <p class="info-src">赏析参考：古诗文网</p>
+    </div>
+<p><a href="#mulu">返回目录</a></p>
+
+
+
+
+
+
     </div>
     <hr>
     <p align="center"><small><a href="../index.html">首页</a> | <a href="../tangshi/tangshi.html">唐诗</a> | <a href="../songci/songci.html">宋词</a></small></p>
     <p align="center"><small>&copy;2026年终末列车组 <a href="mailto:564997486@qq.com">联系我们</a></p>
 
 <script>
+function togglePanel(id, btn) {
+    var panel = document.getElementById(id);
+    if (!panel) return;
+    var show = !panel.classList.contains('show');
+    panel.classList.toggle('show', show);
+    btn.classList.toggle('on', show);
+}
+function togglePinyin(btn) {
+    var id = btn.getAttribute('data-poem') || 'djm-shi';
+    var poem = document.getElementById(id);
+    if (!poem) return;
+    var show = !poem.classList.contains('showpy');
+    poem.classList.toggle('showpy', show);
+    btn.classList.toggle('on', show);
+}
 if (window.top && window.top !== window) {
     var homeLinks = document.querySelectorAll('a[href="../index.html"]');
     for (var i = 0; i < homeLinks.length; i++) {

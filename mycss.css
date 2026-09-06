@@ -7,7 +7,7 @@ body{
 h2{                                      
   border-bottom:1px black solid; 
 }
-h1{font:36px/2em  黑体;} 
+h1{font:36px/2em  楷体;} 
 p{
     font-size: 20px;
 }
@@ -16,3 +16,34 @@ a{text-decoration:none;
 a:hover{   
 text-decoration:underline; 
 color:rgb(194, 192, 82);}
+
+/* ===== 诗词译/注/赏/音工具 ===== */
+.poem-heading{position:relative; min-height:42px; text-align:center;}
+.poem-tools{position:absolute; right:0; top:50%; transform:translateY(-50%); white-space:nowrap;}
+.poem-tools .tag{display:inline-block; margin-left:6px; padding:1px 9px; border:1px solid var(--tag-border,#6b6b4e);
+    border-radius:4px; background:var(--tag-bg,#f6f3de); color:var(--tag-text,#000000);
+    font:14px/1.9 楷体; cursor:pointer;}
+.poem-tools .tag:hover{background:var(--tag-hover-bg,#e9e4bd);}
+.poem-tools .tag.on{background:var(--tag-on-bg,rgb(194,192,82)); color:var(--tag-on-text,#ffffff);
+    border-color:var(--tag-on-border,rgb(194,192,82));}
+.poem-info{display:none; margin:8px 0 4px; padding:2px 24px 8px; border:1px solid #ddd7b2;
+    background:rgba(250,248,235,.75); text-align:left;}
+.poem-info.show{display:block;}
+.poem-info .panel-title{margin:8px 0 4px; text-align:center; font-weight:bold;}
+.poem-info p{margin:6px 0;}
+.poem-info .yi-txt{color:#666; font-size:17px;}
+.poem-info .p-para{text-indent:2em;}
+.poem-info .info-src{margin:10px 0 2px; color:#999; font-size:14px; text-align:right;}
+.poem-shi .ln{display:block;}
+.poem-shi .py{display:none; color:#777; font-size:16px; font-family:楷体,KaiTi,serif;}
+.poem-shi.showpy .py{display:block;}
+
+.poem-tools{
+    --tag-bg:#f6f3de;             
+    --tag-text:#000000;            
+    --tag-border:#6b6b4e;          
+    --tag-hover-bg:#e9e4bd;        
+    --tag-on-bg:rgb(214,214,184);  
+    --tag-on-text:#ffffff;         
+    --tag-on-border:rgb(194,192,82);
+}
